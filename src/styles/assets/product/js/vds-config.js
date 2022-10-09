@@ -1,3 +1,15 @@
+$(document).ready(function(){
+    getCurrentYear();
+  
+/* <![CDATA[ */
+( function( $ ) {
+    $( 'a[href="#"]' ).click( function(e) {
+        e.preventDefault();
+    } );
+} )( jQuery );
+/* ]]> */
+});
+
 document.documentElement.style
 .setProperty('--add-font-sans', 'Roboto');
 
@@ -27,3 +39,9 @@ document.documentElement.style
 
 // document.documentElement.style
 // .setProperty('--link-style-color', 'var(--set-color-secondary)');
+
+// Get current year
+// 
+function getCurrentYear() {
+    $("#getCurrentYear").html(new Date().getFullYear());
+}

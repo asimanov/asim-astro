@@ -2,6 +2,9 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 // import '../styles/global.css';
+import '../styles/assets/vds/dist/variable.min.css';
+import '../styles/assets/product/js/prism.css';
+import '../styles/assets/product/dist/style.min.css';
 
 export interface Props {
 	title: string;
@@ -37,8 +40,15 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<meta name="theme-color" content="#1b1b1b">
+
 <!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Slab:300,400,700|Merriweather:400,700|Cousine:400,700&display=swap" type="text/css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="/assets/dist/variable.min.css?v=0.0.4" />
-<link rel="stylesheet" href="/assets/product/js/prism.css" />
-<link rel="stylesheet" href="/assets/product/dist/style.min.css?v=1.0.7" />
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" is:inline></script>
+<script src="/assets/product/js/vds-config.js" is:inline></script>
+<script src="/assets/product/js/assets.js" is:inline></script>
+<script src="/assets/product/js/prism.js" is:inline></script>
+<script src="https://kit.fontawesome.com/9921667978.js"></script>
