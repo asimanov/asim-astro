@@ -1,0 +1,34 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../config';
+---
+
+<nav class="navigation vds-bg--base">
+    <div class="container navigation__container">
+        
+        <div class="navigation__content">
+
+            <HeaderLink href="/" class="navigation__title">
+                <img class="img" src="/assets/product/images/asim.svg?v=1.0.3" alt="ASIM" title="ASIM">
+            </HeaderLink>
+
+            <ul class="navigation__list vds-text--white">
+                <li>
+                    <HeaderLink href="/blog" class="navigation__link"><i class="fad fa-home"></i> <span>Blog</span></HeaderLink>
+                </li>
+                <li>
+                    <HeaderLink href="/about" class="navigation__link"><i class="fad fa-flag"></i> <span>About</span></HeaderLink>
+                </li>
+                <li>
+                    <HeaderLink href="/work" class="navigation__link"><i class="fad fa-briefcase"></i> <span>Work</span></HeaderLink>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav> 
+<style>
+	i {
+        padding-right: 1em;
+    }
+</style>

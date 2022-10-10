@@ -1,0 +1,89 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Nav from '../components/Nav.astro';
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		updatedDate?: string;
+		heroImage?: string;
+	};
+}
+
+const {
+	content: { title, description, pubDate, updatedDate, heroImage },
+} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.title {
+				font-size: 2em;
+				margin: 0.25em 0 0;
+			}
+			hr {
+  				border-top: 1px solid #DDD;
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+
+	<body>
+        <Nav />
+
+        <header class="page-header" style="padding-top: 45rem;">
+            <div class="intro-card intro-card__about vds-text--white p-b-2">
+                <div class="container">
+                    
+                    <div class="row">
+    
+                        <div class="col-12 p-y-2">               
+                            <img src="assets/product/images/book-bw.png">
+                        </div>
+    
+                        <div class="col-12">
+                            <h2>Who I am</h2>
+    
+                            <p>My name is <strong>Anton Simanov</strong>. I'm a web designer, front-end developer, life-time UX apprentice, self-described project manager, back-end novice, hardware enthusiast and research advocate out of Central California. I can feel grey pixels growing out of my beard.</p>
+    
+                                                </div>
+    
+                        <div class="col-12 p-t-1">
+                            <h2>About me</h2>
+    
+                            <div class="row">
+                            <div class="col-md-6">
+                            <p>Since I was a young boy I was fascinated by signs and how everyone around me inferred them, and much more, how differently we all do while understanding the basic messages which are laid out in front of us.</p>
+                            </div>
+    
+                            <div class="col-md-6">
+                            <p>Visual communication is the one and only most important and least studied part of humanity that will never cease to amaze me. I study and follow every aspect of it and get to make cool "web-thingies" for everyone to enjoy and interpret.</p>
+                            </div>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+    
+                </div>
+            </div>
+    
+            
+        </header> 
+
+		<div class="p-t-1 p-b-2">
+            <div class="container post">
+                <section class="section">
+                    <slot />
+                </section>
+            </div>
+        </div>
+
+		<Footer />
+	</body>
+</html>
