@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Nav from '../components/Nav.astro';
+import WorkNav from '../components/WorkNav.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
@@ -14,124 +15,630 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 		<Nav />
 
-		<header class="landing-header vds-bg--base p-t-6 p-b-4" style="background: url(/assets/product/images/landing-hero.jpg) center center no-repeat; background-size: auto; background-size: cover;">
-			<div class="container vds-text--white">
-				<div class="row">
-					<div class="col-md-10 col-xs-12">
-						<span>Hi, I'm Anton Simanov! 👋🏻</span>
-		
-						<h1 class="p-y-1">Digital designer &amp; web developer from the San Joaquin Valley <i class="fad fa-flag-usa"></i></h1>
-		
-						<p>I specialize in design, development, and maintenance of government and public sector websites and applications.</p>
-				
+	<main>
+
+		<header class="page-header vds-bg--base vds-text--white" style="padding-top: 45rem;">
+			<div class="intro-card intro-card__work p-y-5">
+				<div class="container padding-top-rem-3">
+					<div class="post-header">
+					
+						<section class="section">
+							<div>
+								<h2 class="m-0" style="text-align: center;">Work</h2>
+							</div>
+						</section>
+	
 					</div>
 				</div>
-		
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<p><a href="/work/" style="color:white;">Take a look at my work ⟶</a></p>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-xs-12 col-md-6 m-b-1">
-						<p class="m-0">Have a question for me? Let's chat!</p>
-					</div>
-		
-					<div class="col-xs-12 col-md-6">
-						<ul class="landing-header__contact">
-							<li><a href="mailto:anton.simanov@gmail.com" title="anton.simanov@gmail.com"><i class="fas fa-envelope"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/antonsimanov/" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://twitter.com/AntonSimanov" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.facebook.com/antonsimanov" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://www.instagram.com/antonsimanov/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-		
 			</div>
 		</header>
 
-		<!-- Specialties -->
-		<section class="vds-bg--base-tint p-t-1">
-			<div class="container">
-				<div class="row p-y-5">
+		<div class="container post p-t-3">
+        
+			<div class="row">
+	
+			<div class="col-xs-12 col-md-3 p-b-2">
+				<aside class="aside-nav">
+					
+					<WorkNav />
 
-					<div class="col-xs-12 col-md-4">
-						<div class="vds-card landing-card m-b-1">
-							<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
-
-							<div class="vds-card__body">
-								<p class="m-0 vds-text--secondary"><strong>Web, UI, UX Design</strong></p>
-								<p class="m-0">
-									I design websites and applications with the goal of providing solutions to problems, communicate clearly, and present visually pleasing products.
-								</p>
-							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--secondary vds-text--base-tint">
-								<span>Design Systems, Web Design, Responsive Design, App Design, UI Design, UX design, Adobe, Figma</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-md-4">
-						<div class="vds-card landing-card m-b-1">
-							<img src="/assets/product/images/blog/landing-dev.svg" alt="Front-end Web Development">
-
-							<div class="vds-card__body">
-								<p class="m-0"><strong>Front-end Web Development</strong></p>
-								<p class="m-0">
-									My focus is on delivering fully ready, semantic, and accessible front-end assets. I specialize in Design System authoring as well as providing custom solutions.
-								</p>
-							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--base vds-text--base-tint">
-								<span>Design System Authoring, HTML5, CSS3, SASS, JavaScript, jQuery, Razor, PHP, Twig, API, Git</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-md-4">
-						<div class="vds-card landing-card m-b-1">
-							<img src="/assets/product/images/blog/landing-analytics.svg" alt="Webmaster Services">
-
-							<div class="vds-card__body">
-								<p class="m-0 vds-text--primary"><strong>Webmaster</strong></p>
-								<p class="m-0">
-									Maintenance is not just about editing and authoring content. I review analytics, SEO, and audit for accesibility among perfoming various support roles.  
-								</p>
-							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--primary vds-text--base-tint">
-								<span>Content Authoring, Design System Compliance, Accesibility Audit, SEO, Analytics Review</span>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+				</aside>
 			</div>
-		</section>
-
-<!-- From the blog -->
-<section class="landing-blog">
-    <div class="container">
-        <div class="row p-t-5 p-b-3">
-
-            <div class="col-xs-12 col-md-8">                
-                
-            </div>
-
-			<div class="col-xs-12 col-md-4 p-b-2">
-                <h5>From the Blog</h5>
-                <p>Take a look at some of the things that keep me busy, be it work related, personal projects, or just life in general.</p>
-
-                <p class="m-0"><a href="/blog/" title="blog">Read all blog posts ⟶</a>
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
+	
+			<div class="col-xs-12 col-md-9">
+			<section class="section">
+						
+				<div class="post-header-img"></div>
+	
+				<div class="post__content">
+					<h3 id="navDesignSystems">Design Systems</h3>
+	
+					<div class="row p-t-2 p-b-6">
+						
+						<div class="col-12">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/variable-design-system.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Variable Design System</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">A lightweight design system composed with CSS custom props, built with sass modules, & configurable with JS.</p>
+	
+									<div class="p-t-1">
+										<a href="https://simanov.dev/vds" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="variable design system docs and demo"><i class="fas fa-eye"></i> view</a>
+										<a href="https://github.com/asimanov/variable-design-system" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="variable design system git repo"><i class="fab fa-github"></i> repo</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://valleyair.org/design-system/assets/img/launch-bg-mountain.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Valley <br> Air Design System</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Extends the Air District brand to web applications & web content.</p>
+	
+									<div class="p-t-1">
+										<a href="https://valleyair.org/design-system-2" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Valley Air Design System Documentation"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/fimg.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Fabric</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">A dead simple one-page responsive framework with a couple features.</p>
+	
+									<div class="p-t-1">
+										<a href="https://simanov.dev/fabric/" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="variable design system docs and demo"><i class="fas fa-eye"></i> view</a>
+										<a href="https://github.com/asimanov/fabric" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="variable design system git repo"><i class="fab fa-github"></i> repo</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+						
+					</div>
+	
+					<h3 id="navSJVAPCD">San Joaquin Valley Air Pollution Control District</h3>
+	
+					<div class="row p-y-2">
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/sjvapcd.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Valley Air District</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Implementing an enterprise CMS solution on Valley Air District website.</p>
+	
+									<div class="p-t-1">
+										<a href="https://ww2.valleyair.org/contact" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Valley Air District Contact Page"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/ab-617.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">AB <br> 617</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">San Joaquin Valley Community Engagement and Protection.</p>
+	
+									<div class="p-t-1">
+										<a href="http://community.valleyair.org" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="San Joaquin Valley Community Engagement and Protection"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/vw-mitigation.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">VW</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">VW Mitigation Trust. Zero-Emission Transit, School, and Shuttle Buses</p>
+	
+									<div class="p-t-1">
+										<a href="http://vwbusmoney.valleyair.org" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="VW Mitigation Trust | Bus Money"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/valley-air-app.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Valley <br> Air App</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">The official app of the San Joaquin Valley Air Pollution Control District.</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/app" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Valley Air App"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/dcsj.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">DCSJ</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Drive Clean in The San Joaquin: Repair, Replace, Rebate programs.</p>
+	
+									<div class="p-t-1">
+										<a href="https://valleyair.org/drivecleaninthesanjoaquin" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Drive Clean in The San Joaquin"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/r4901.jpg); min-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Rule <br> 4901</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Residential Wood Burning Rule 4901, "Check Before You Burn."</p>
+	
+									<div class="p-t-1">
+										<a href="https://valleyair.org/rule4901" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Residential Wood Burning Rule 4901"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/aqa-forecast.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">AQA</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">AQA Services: Daily Air Quality Forecast.</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/aqinfo/forecast.htm" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="AQA Services: Daily Air Quality Forecast"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/aqa-cbyb.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">AQA</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">AQA Services: Check Before You Burn.</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/aqinfo/cbyb.htm" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="AQA Services: Check Before You Burn"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/aqa-wildfires.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">AQA</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">AQA Services: Wildfire Information.</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/aqinfo/wildfires.htm" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="AQA Services: Wildfire Information"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/hal.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Healthy Air Living</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Make a change, get involved, spread the word and live a Healthy Air Life!</p>
+	
+									<div class="p-t-1">
+										<a href="http://healthyairliving.com" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Healthy Air Living"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/raan.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">RAAN</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">RAAN - Real-time Air Advisory Network</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/myraan" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="RAAN - Real-time Air Advisory Network"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/waaqs.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">WAAQs</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">WAAQs - Web-based Archived Air Quality System</p>
+	
+									<div class="p-t-1">
+										<a href="https://www.valleyair.org/waaqs" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="WAAQs - Web-based Archived Air Quality System"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/rwbhp.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">RWBHP</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">4901 Device Inspection System</p>
+	
+									<div class="p-t-1">
+										<a href="https://valleyair.org/rwbhp" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="4901 Device Inspection System"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card vds-card--hr m-b-2">
+								<div class="vds-card__img-title" style="background-image:url(https://antonsimanov.com/user/themes/vds/images/work/cards/grants.jpg); min-width: 40%; max-width: 40%;">
+									<div class="p-y-1 p-x-1">
+										<h5 class="m-0">Grants</h5>
+									</div>
+								</div>
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--sm">Grants &amp; Incentives</p>
+	
+									<div class="p-t-1">
+										<a href="https://valleyair.org/grants" target="_blank" class="vds-button vds-button--outlined vds-button--sm m-0" rel="noopener noreferrer" title="Grants and Incentives"><i class="fas fa-eye"></i> view</a>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+					</div>
+	
+					<h3 id="navIdentity">Identity</h3>
+	
+					<div class="row p-y-2">
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/gof.svg" alt="Green Office Furnishings">
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--xs text-align--center">Green Office Furnishings</p>
+								</div>
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/green-office-furnishings" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Green Office Furnishings"><i class="far fa-search"></i> case study</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/collecto.svg" alt="Collecto">
+	
+								<div class="vds-card__body">
+									<p class="m-0 font-size--xs text-align--center">Collecto</p>
+								</div>
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/collecto" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Collecto"><i class="far fa-search"></i> case study</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/jar.svg" alt="Johnson's Auto Repair">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">Johnson's Auto Repair</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/dfc.svg" alt="DeFehr Construction">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">DeFehr Construction</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/asim.svg" alt="ASIM">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">Personal Brand</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/fabric.svg" alt="Fabric">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">Fabric</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/mustachebear.svg" alt="Mustache Bear">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">Mustache Bear</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/no12.svg" alt="NoTwelve">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">NoTwelve</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/ppress.svg" alt="Pixelnaut Press">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">Pixelnaut Press</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="vds-card m-b-2 p-t-1 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/identity/trc.svg" alt="The Robot Cave">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center m-t-1">
+									<p class="m-0 font-size--xs vds-text--white text-align--center">The Robot Cave</p>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<h3 id="navIllustration">Illustration</h3>
+	
+					<div class="row p-y-2">
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/2020.jpg" alt="Premonition 2020">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/2020" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Premonition 2020"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/spacebear.jpg" alt="spacebear">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/space-bear-suit" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Space Bear Suit"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/gearhead.jpg" alt="gear head">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/gear-head" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Gear Head"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/spacehick.jpg" alt="spacehick">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/spacehick" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Spacehick"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/warpspeed.jpg" alt="Warp Speed 1.0">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/warp-speed-1-0" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Warp Speed 1.0"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/carpdiem.jpg" alt="carpe diem">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/carpe-diem" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Carpe Diem"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/thirdspace.jpg" alt="third space">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/third-space" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Third Space"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/yeti.jpg" alt="space yeti">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/space-yeti" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Space Yeti"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/leap.jpg" alt="leap">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/leap" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Leap"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/spacebit.jpg" alt="spacebit">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/spacebit" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Spacebit"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/pixeltris.jpg" alt="pixeltris">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/pixeltris" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Pixeltris"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-xs-12 col-md-6">
+							<div class="vds-card m-b-2 justify-content-center">
+								<img src="https://antonsimanov.com/user/themes/vds/images/work/cards/illu/supercolor.jpg" alt="supercolor">
+	
+								<div class="vds-card__footer vds-bg--base justify-content-center">
+									<a href="https://antonsimanov.com/en/blog/supercolor" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Supercolor"><i class="fas fa-eye"></i> view</a>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+	
+				</div>
+				
+			</section>
+			</div>    
+				
+			</div>
+	
+		</div>
 
 		<Footer />
+	
+	</main>
 
 	</body>
 </html>
