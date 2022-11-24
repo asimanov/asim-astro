@@ -94,7 +94,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 			<div class="row m-0">
 
 				<div class="col-4 entry__img">
-					<img src={post.frontmatter.thumbnail} alt="post thumbnail"/>
+					<img src={`/assets/product/images/blog/blog-${post.frontmatter.thumbnail}.svg`} alt={post.frontmatter.thumbnail}/>
 				</div>
 
 				<div class="meta col-8">

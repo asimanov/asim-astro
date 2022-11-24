@@ -5,8 +5,8 @@ pubDate: 04/25/2019
 description: 'So I was updating some of my projects and noticed that Gulp has a new stable version...'
 author: Asim
 tags: 'npm, gulp, gulp 4, gulp 3'
-thumbnail: /assets/product/images/blog/blog-dev.svg
-background: /Media/blog/g3-g4-2.jpg
+thumbnail: dev
+background: g3-g4-2.jpg
 ---
 
 So I was updating some of my projects and noticed that Gulp has a new stable version... This can't be real! It hasn't happened in half a decade... When it comes to updating anything I tend to move cautiously and upgrade bit by bit, looking for breaking changes that may not be obviously documented with new releases or known issues. This time, because it's been so long without an official release (I'm not much of a betta tester, I know v4 has been out for a while in that realm) I just pulled the trigger and moved fast... Breaking everything. 
@@ -305,6 +305,7 @@ gulp.task('default', build);
 ```
 
 See the order by running "gulp --task" which is basically a nice little illustration of the gulpfile. 
-![](gulp-tasks.jpg)
+
+![](/Media/blog/gulp-tasks.jpg)
 
 That's it! Now either run "gulp" for dev and get to work or run "gulp prod" to ship. After all this hard work have a <span role="image" aria-label="hamburger">🍔</span> with your <span role="image" aria-label="soda">🥤</span>.
