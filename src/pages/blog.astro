@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
@@ -33,24 +33,99 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
+
+		<Nav />
+		
 		<main>
-			<section>
-				<ul>
-					{posts.map((post) => (
-						<li>
-							<time datetime={post.frontmatter.pubDate}>
-								{new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
-									year: 'numeric',
-									month: 'short',
-									day: 'numeric',
-								})}
-							</time>
-							<a href={post.url}>{post.frontmatter.title}</a>
-						</li>
-					))}
-				</ul>
+
+			<header class="page-header vds-bg--base vds-text--white" style="padding-top: 45rem;">
+				<div class="intro-card intro-card__blog p-y-5">
+					<div class="container padding-top-rem-3">
+						<div class="post-header">
+						
+							<section class="section">
+								<div>
+									<h2 class="m-0" style="text-align: center;">My thoughts about things</h2>
+								</div>
+							</section>
+		
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="vds-bg--white">
+				<div class="container">
+					<div class="blog-legend">
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-dev.svg" class="no-margin" alt="dev icon"/>
+							<p>Dev</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-design.svg" class="no-margin" alt="design icon"/>
+							<p>Design</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-self.svg" class="no-margin" alt="self icon"/>
+							<p>Self</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-illu.svg" class="no-margin" alt="illu icon"/>
+							<p>Illu</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="body">
+				<div class="wrapper padding">
+
+					<div class="container">
+						<section class="section">
+
+<div class="entry">							
+{posts.map((post) => (
+
+	<div class="entry__post">
+		<a href={post.url} class="vds-card">
+			<div class="row m-0">
+
+				<div class="col-4 entry__img">
+					<img src={post.frontmatter.thumbnail} alt="post thumbnail"/>
+				</div>
+
+				<div class="meta col-8">
+					<p>
+						<time datetime={post.frontmatter.pubDate}>
+							{new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
+								year: 'numeric',
+								month: 'numeric',
+								day: 'numeric',
+							})}
+						</time>	
+					</p>
+				</div>
+
+				<div class="col-12 entry__content">
+					<h5 class="p-b-1">{post.frontmatter.title}</h5>
+					<div><p>{post.frontmatter.description}</p></div>
+				</div>
+
+			</div>
+		</a>
+	</div>
+))}
+</div>
+							
+						</section>
+					</div>
+
+				</div>
 			</section>
+
 		</main>
 		<Footer />
 	</body>
