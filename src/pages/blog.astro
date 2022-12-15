@@ -31,6 +31,14 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				color: #8e32dc;
 			}
 		</style>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/shave/5.0.2/shave.min.js" is:inline></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				shave('.truncate', 150);
+			});
+		</script>
 	</head>
 	<body>
 
@@ -84,7 +92,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				<div class="wrapper padding">
 
 					<div class="container">
-						<section class="section">
+						<section class="section p-b-4">
 
 <div class="entry">							
 {posts.map((post) => (
@@ -111,7 +119,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
 				<div class="col-12 entry__content">
 					<h5 class="p-b-1">{post.frontmatter.title}</h5>
-					<div><p>{post.frontmatter.description}</p></div>
+					<div><p class="truncate">{post.frontmatter.description}</p></div>
 				</div>
 
 			</div>
