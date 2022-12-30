@@ -3,10 +3,10 @@ layout: "../../layouts/BlogPost.astro"
 title: 'Shift - CSU Fresno Senior Portfolio Show'
 description: 'You''re a university student. You’re going over various concepts that might or might not work for your upcoming finals. You’re forgetting about those extra things that you swore you would do a month ago and only now remembering about them. You’re hammering together a display to showcase several years of late nights, deadlines, and hard work. You’re about to graduate.'
 author: Asim
-date: 04/09/2013
+pubDate: 04/09/2013
 tags: 'Pixelnaut Press, CSU Fresno, CSUF, Shift, Portfolio Show'
 thumbnail: self
-background: 
+background: placeholder.jpg
 ---
 
 You're a university student. You’re going over various concepts that might or might not work for your upcoming finals. You’re forgetting about those extra things that you swore you would do a month ago and only now remembering about them. You’re hammering together a display to showcase several years of late nights, deadlines, and hard work. You’re about to graduate.

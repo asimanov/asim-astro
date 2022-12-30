@@ -20,7 +20,7 @@ When you have a date range that spans over a year change you should, most defini
 
 Your initial date range is probably something like this:
 
-```markup
+```html
 10/01/yyyy - 03/01/yyyy
 ```
 
@@ -49,7 +49,7 @@ if (currentDate >= minDate && currentDate <= maxDate ){
 
 That's all well and good if the months fall in the same year but they don't so you simply adjust for the next year as follows:
 
-```markup
+```html
 10/01/yyyy - 03/01/yyyy+1
 ```
 
@@ -80,7 +80,7 @@ if (currentDate >= minDate && currentDate <= maxDate ){
 
 <a href="https://nkayesel.files.wordpress.com/2013/06/no-its-not.gif?w=500&h=281" target="_blank">It's not that simple</a> because the months falling in the *next* year are now out of range. Initially I failed to do that simple step and stopped at adding "+1" to the date range causing the "specific stuff" to not show on the first of the new year. Enter the exception:
 
-```markup
+```html
 01/01/yyyy - 03/01/yyyy
 ```
 
@@ -118,7 +118,7 @@ if (currentDate >= minDate && currentDate <= maxDate ){
 
 We, at this point, accounted for that but the month of February is a tricky one with all that <a href="http://i.imgur.com/uLVEt.gif" target="_blank">Leap Year business</a>. Lets modify our variables and try again:
 
-```markup
+```html
 10/01/yyyy - (03/01/yyyy+1)-1
 01/01/yyyy - (03/01/yyyy)-1
 ```
