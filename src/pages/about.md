@@ -1,9 +1,7 @@
 ---
 layout: "../layouts/About.astro"
 title: "About"
-description: "Lorem ipsum dolor sit amet"
-updatedDate: "August 08 2022"
-heroImage: "/placeholder-about.jpg"
+description: "I am currently employed as an Air Quality Education Web Specialist at the San Joaquin Valley Air Pollution Control District. My focus is in designing, developing, and managing public facing and internal government websites and web applications."
 ---
 <div class="p-t-2 p-b-1">
 
