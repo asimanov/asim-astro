@@ -1,0 +1,66 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+// import RecentPosts from '../components/RecentPosts.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+		<Nav />
+
+<!-- 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+!!!!!!!! REDIRECT TO URL !!!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+-->
+<script type="text/javascript">
+
+window.setTimeout(function() {
+    window.location.href = '/blog/kicking-off-2023-with-astro-build/';
+}, 3000);
+
+</script>
+<!-- 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+-->
+
+<!-- 404 -->
+<section class="landing-blog">
+    <div class="container">
+        <div class="row p-t-5 p-b-3">
+
+            <div class="col-xs-12 col-md-6">                
+                <img src="/assets/product/images/404.jpg" alt="island">
+            </div>
+
+			<div class="col-xs-12 col-md-6 p-b-1">
+                <h3 class="p-t-2">Redirecting!</h3>
+                <p>Hang tight as we teleport you to your destination.</p>
+                <!-- <div class="d-flex justify-content-center p-t-1"> -->
+                    <span class="d-flex justify-content-between p-t-1">
+                        <i class="fa-duotone fa-spinner-third fa-2xl fa-spin"></i>
+                        <i class="fa-duotone fa-planet-ringed fa-2xl fa-spin"></i>
+                        <i class="fa-duotone fa-face-laugh fa-2xl fa-spin"></i>
+                        <i class="fa-duotone fa-ufo fa-2xl fa-spin"></i>
+                        <i class="fa-duotone fa-alien-8bit fa-2xl fa-spin"></i>
+                    </span>
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+		<Footer />
+
+	</body>
+</html>
