@@ -3,19 +3,23 @@ import BaseHead from "../components/BaseHead.astro";
 import Nav from '../components/Nav.astro';
 import Footer from "../components/Footer.astro";
 
-export interface Props {
-	content: {
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-		heroImage?: string;
-	};
-}
+// type Props = CollectionEntry<'about'>['data'];
 
-const {
-	content: { title, description, pubDate, updatedDate, heroImage },
-} = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+// export interface Props {
+// 	content: {
+// 		title: string;
+// 		description: string;
+// 		pubDate?: string;
+// 		updatedDate?: string;
+// 		heroImage?: string;
+// 	};
+// }
+
+// const {
+// 	content: { title, description, pubDate, updatedDate, heroImage },
+// } = Astro.props;
 ---
 
 <html lang="en">
@@ -37,7 +41,7 @@ const {
         <Nav />
 
         <header class="page-header" style="padding-top: 45rem;">
-            <div class="intro-card intro-card__about vds-text--white p-b-2" style="background: url(/assets/product/images/colophon-bw-1.jpg) 50% no-repeat; background-size: cover;">
+            <div class="intro-card intro-card__about p-b-2" style="background: url(/assets/product/images/colophon-bw-1.jpg) 50% no-repeat; background-size: cover;">
                 <div class="container">
                     
                     <div class="row">

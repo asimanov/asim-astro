@@ -1,25 +1,12 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
 import Nav from '../components/Nav.astro';
-import Footer from "../components/Footer.astro";
+import Footer from '../components/Footer.astro';
 
-export interface Props {
-	content: {
-		title: string;
-		pubDate?: string;
-		description: string;
-		author?: string;
-		tags?: string;
-		thumbnail?: string;
-		background?: string;
-	};
-}
+type Props = CollectionEntry<'blog'>['data'];
 
-const {
-	content: { title, pubDate, description, author, tags, thumbnail, background },
-} = Astro.props;
-
-// const { content } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, author, tags, thumbnail, background } = Astro.props;
 ---
 
 <html lang="en">
@@ -64,7 +51,16 @@ const {
 
 						<img src={`/assets/product/images/blog/blog-${thumbnail}.svg`} alt={thumbnail} class="post__meta-thumbnail"/>
 
-						<span class="post__meta-author">{author}</span> <span class="post__meta-date"> {pubDate}</span>
+						<span class="post__meta-author">{author}</span> 
+						<span class="post__meta-date">  
+							<time>
+								{new Date(pubDate).toLocaleDateString('en-us', {
+									year: 'numeric',
+									month: 'numeric',
+									day: 'numeric',
+								})}
+							</time>	
+						</span>
 					</div>
 
 					<div class="post-header-img" style={`background-image:url(/Media/blog/${background})`}></div>
@@ -80,16 +76,3 @@ const {
 		</main>
 	</body>
 </html>
-
-<!-- <article>
-	{heroImage && (
-		<img
-			width={720}
-			height={360}
-			src={heroImage}
-			alt=""
-		/>
-	)}
-
-	<slot />
-</article> -->

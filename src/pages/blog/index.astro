@@ -1,0 +1,154 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				list-style-type: none;
+				padding: unset;
+			}
+			ul li {
+				display: flex;
+			}
+			ul li time {
+				flex: 0 0 130px;
+				font-style: italic;
+				color: #595959;
+			}
+			ul li a:visited {
+				color: #8e32dc;
+			}
+		</style>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/shave/5.0.2/shave.min.js" is:inline></script>
+
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="page-header vds-bg--base" style="padding-top: 45rem;">
+				<div class="intro-card intro-card__blog p-y-5" style="background: url(/assets/product/images/blog-bw-1.jpg) 50% no-repeat; background-size: cover;">
+					<div class="container padding-top-rem-3">
+						<div class="post-header">
+						
+							<section class="section">
+								<div>
+									<h2 class="m-0" style="text-align: center;">My thoughts about things</h2>
+								</div>
+							</section>
+		
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="blog-legend-container">
+				<div class="container">
+					<div class="blog-legend">
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-dev.svg" class="no-margin" alt="dev icon"/>
+							<p>Dev</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-design.svg" class="no-margin" alt="design icon"/>
+							<p>Design</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-self.svg" class="no-margin" alt="self icon"/>
+							<p>Self</p>
+						</div>
+		
+						<div class="blog-legend__type">
+							<img src="/assets/product/images/blog/blog-illu.svg" class="no-margin" alt="illu icon"/>
+							<p>Illu</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="body">
+				<div class="wrapper padding">
+
+					<div class="container">
+						<section class="section p-b-4">
+
+<div class="entry">
+	
+	{
+		posts.map((post) => (
+			<div class="entry__post">
+			
+				<a href={`/blog/${post.slug}/`} class="vds-card">
+					<div class="row m-0">
+
+						<div class="col-4 entry__img">
+							<img src={`/assets/product/images/blog/blog-${post.data.thumbnail}.svg`} alt={post.data.thumbnail}/>
+						</div>
+
+						<div class="meta col-8">
+							<p>
+								<time>
+									{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+										year: 'numeric',
+										month: 'numeric',
+										day: 'numeric',
+									})}
+								</time>	
+							</p>
+						</div>
+
+						<div class="col-12 entry__content">
+							<h5 class="p-b-1">{post.data.title}</h5>
+							<div><p class="truncate">{post.data.description}</p></div>
+						</div>
+
+					</div>
+				</a>
+			
+			</div>
+		))
+	}
+
+</div>
+
+						</section>
+					</div>
+				
+				</div>
+			</section>
+
+			<!-- <section>
+				<ul>
+					{
+						posts.map((post) => (
+							<li>
+								<a href={`/blog/${post.slug}/`}>
+									<img width={720} height={360} src={post.data.heroImage} alt="" />
+									<h4 class="title">{post.data.title}</h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section> -->
+		</main>
+		<Footer />
+	</body>
+</html>

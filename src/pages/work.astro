@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Nav from '../components/Nav.astro';
 import WorkNav from '../components/WorkNav.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 	<main>
 
-		<header class="page-header vds-bg--base vds-text--white" style="padding-top: 45rem;">
+		<header class="page-header vds-bg--base" style="padding-top: 45rem;">
 			<div class="intro-card intro-card__work p-y-5" style="background: url(/assets/product/images/work-bw.jpg) 50% no-repeat; background-size: cover;">
 				<div class="container padding-top-rem-3">
 					<div class="post-header">
@@ -401,7 +401,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								</div>
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/kicking-off-2023-with-astro-build" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Collecto"><i class="far fa-search"></i> case study</a>
+									<a href="/blog/kicking-off-2023-with-astro-build" class="vds-button vds-button--outlined vds-button--sm m-0" title="Collecto"><i class="far fa-search"></i> case study</a>
 								</div>
 	
 							</div>
@@ -416,7 +416,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								</div>
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/valley-web-design-illustration" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Valley Web Design"><i class="far fa-search"></i> case study</a>
+									<a href="/blog/valley-web-design-illustration" class="vds-button vds-button--outlined vds-button--sm m-0" title="Valley Web Design"><i class="far fa-search"></i> case study</a>
 								</div>
 							</div>
 						</div>
@@ -430,7 +430,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								</div>
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/otterdoit" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Otterdoit"><i class="far fa-search"></i> case study</a>
+									<a href="/blog/otterdoit" class="vds-button vds-button--outlined vds-button--sm m-0" title="Otterdoit"><i class="far fa-search"></i> case study</a>
 								</div>
 							</div>
 						</div>
@@ -444,7 +444,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								</div>
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/green-office-furnishings" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Green Office Furnishings"><i class="far fa-search"></i> case study</a>
+									<a href="/blog/green-office-furnishings" class="vds-button vds-button--outlined vds-button--sm m-0" title="Green Office Furnishings"><i class="far fa-search"></i> case study</a>
 								</div>
 							</div>
 						</div>
@@ -458,7 +458,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								</div>
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/collecto" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Collecto"><i class="far fa-search"></i> case study</a>
+									<a href="/blog/collecto" class="vds-button vds-button--outlined vds-button--sm m-0" title="Collecto"><i class="far fa-search"></i> case study</a>
 								</div>
 							</div>
 						</div>
@@ -543,7 +543,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/timebox-edit.jpg" alt="Timeboxed">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/timeboxed-illustration" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Rog on a Rock"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/timeboxed-illustration" class="vds-button vds-button--outlined vds-button--sm m-0" title="Rog on a Rock"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -553,7 +553,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/rog-on-a-rock.jpg" alt="Rog on a Rock">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/rog-on-a-rock" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Rog on a Rock"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/rog-on-a-rock" class="vds-button vds-button--outlined vds-button--sm m-0" title="Rog on a Rock"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -563,7 +563,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/valley-web-design.jpg" alt="Valley Web Design">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/valley-web-design-illustration" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Valley Web Design"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/valley-web-design-illustration" class="vds-button vds-button--outlined vds-button--sm m-0" title="Valley Web Design"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -573,7 +573,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/2020.jpg" alt="Premonition 2020">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/2020" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Premonition 2020"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/2020" class="vds-button vds-button--outlined vds-button--sm m-0" title="Premonition 2020"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -583,7 +583,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/spacebear.jpg" alt="spacebear">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/space-bear-suit" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Space Bear Suit"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/space-bear-suit" class="vds-button vds-button--outlined vds-button--sm m-0" title="Space Bear Suit"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -593,7 +593,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/gearhead.jpg" alt="gear head">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/gearhead" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Gear Head"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/gearhead" class="vds-button vds-button--outlined vds-button--sm m-0" title="Gear Head"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -603,7 +603,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/spacehick.jpg" alt="spacehick">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/spacehick" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Spacehick"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/spacehick" class="vds-button vds-button--outlined vds-button--sm m-0" title="Spacehick"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -613,7 +613,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/warpspeed.jpg" alt="Warp Speed 1.0">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/warp-speed-1-0" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Warp Speed 1.0"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/warp-speed-1-0" class="vds-button vds-button--outlined vds-button--sm m-0" title="Warp Speed 1.0"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -623,7 +623,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/carpdiem.jpg" alt="carpe diem">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/carpe-diem" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Carpe Diem"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/carpe-diem" class="vds-button vds-button--outlined vds-button--sm m-0" title="Carpe Diem"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -633,7 +633,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/thirdspace.jpg" alt="third space">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/third-space" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Third Space"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/third-space" class="vds-button vds-button--outlined vds-button--sm m-0" title="Third Space"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -643,7 +643,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/yeti.jpg" alt="space yeti">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/space-yeti" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Space Yeti"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/space-yeti" class="vds-button vds-button--outlined vds-button--sm m-0" title="Space Yeti"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -653,7 +653,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/leap.jpg" alt="leap">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/leap" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Leap"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/leap" class="vds-button vds-button--outlined vds-button--sm m-0" title="Leap"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -663,7 +663,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/spacebit.jpg" alt="spacebit">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/spacebit" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Spacebit"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/spacebit" class="vds-button vds-button--outlined vds-button--sm m-0" title="Spacebit"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -673,7 +673,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/pixeltris.jpg" alt="pixeltris">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/pixeltris" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Pixeltris"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/pixeltris" class="vds-button vds-button--outlined vds-button--sm m-0" title="Pixeltris"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>
@@ -683,7 +683,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 								<img src="/assets/product/images/work/cards/illu/supercolor.jpg" alt="supercolor">
 	
 								<div class="vds-card__footer vds-bg--base justify-content-center">
-									<a href="/blog/supercolor" class="vds-button vds-button--outlined-light vds-button--sm m-0" title="Supercolor"><i class="fas fa-eye"></i> view</a>
+									<a href="/blog/supercolor" class="vds-button vds-button--outlined vds-button--sm m-0" title="Supercolor"><i class="fas fa-eye"></i> view</a>
 								</div>
 							</div>
 						</div>

@@ -19,6 +19,7 @@ document.documentElement.style
 document.documentElement.style
 .setProperty('--add-font-mono', 'Cousine');
 
+
 // document.documentElement.style
 // .setProperty('--set-color-primary', '#e41d3d');
 

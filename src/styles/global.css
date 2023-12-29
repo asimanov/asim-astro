@@ -1,10 +1,84 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
- .astro-code code {
+body {
+	background: rgb(16, 15, 15);
+}
+
+.aside-nav nav {
+	--aside-nav-bg: rgb(16, 15, 15);
+	--aside-nav-border-color: var(--set-color-base-light);
+}
+
+.vds-card {
+	--card-bg-body: var(--set-color-base-tint);
+	--card-box-shadow: 0 0 5px rgba(0,0,0,0.05),0 0 20px rgba(0,0,0,0.5);
+
+	.vds-card__body {
+		background: var(--set-color-base-tint);
+	}
+}
+
+.entry__img {
+	img {
+		width: 35%;
+	}
+}
+
+.landing-card {
+	.vds-card__footer {
+		background: var(--set-color-base-light);
+	}
+
+	img {
+		width: 35%;
+	}
+}
+
+.footer-note,
+.footer-note-contact {
+	background: black;
+	color: var(--set-color-base);
+
+	a {
+		color: inherit;
+	}
+}
+
+.vds-text--primary {
+	color: #DA702C;
+}
+
+.vds-text--secondary {
+	color: rgb(139, 126, 200);
+}
+
+.post__meta-thumbnail {
+    background: none;
+}
+
+.post__meta-date {
+    color: var(--set-color-base);
+}
+
+pre > code {
+	all: unset;
+}
+
+.astro-code,
+.astro-code code {
 	--code-bg: #0d1117;
 	--code-font-weight: 400;
 	--code-display: inherit;
+}
+
+.navigation__list {
+
+	a.active {
+		text-decoration: none;
+		font-weight: 700;
+		color: var(--set-color-secondary) !important;
+	}
+
+}
+
+::selection {
+	background: #205EA6;
 }

@@ -1,29 +1,53 @@
-document.documentElement.style
-.setProperty('--add-font-sans', 'Roboto');
+document.addEventListener("DOMContentLoaded", function(){
+    cssPropWrite();
+    getCurrentYear();
+    truncate();
 
-document.documentElement.style
-.setProperty('--add-font-serif', 'Merriweather');
+/* <![CDATA[ */
+( function( $ ) {
+    $( 'a[href="#"]' ).click( function(e) {
+        e.preventDefault();
+    } );
+} )( jQuery );
+/* ]]> */
+});
+  
+function cssPropWrite() {
+    document.documentElement.style
+    .setProperty('--set-color-base', 'rgb(206, 205, 195)');
 
-document.documentElement.style
-.setProperty('--add-font-mono', 'Cousine');
+    document.documentElement.style
+    .setProperty('--set-color-base-light', 'rgb(40, 39, 38)');
 
-// document.documentElement.style
-// .setProperty('--set-color-primary', '#e41d3d');
+    document.documentElement.style
+    .setProperty('--set-color-base-tint', 'rgb(16, 15, 15)');
 
-// document.documentElement.style
-// .setProperty('--set-color-primary-tint', '#f2938c');
+    document.documentElement.style
+    .setProperty('--set-color-primary', 'rgb(218, 112, 44)');
 
-// document.documentElement.style
-// .setProperty('--set-color-primary-shade', '#8b1303');
+    document.documentElement.style
+    .setProperty('--set-color-primary-shade', 'rgb(188, 82, 21)');
 
-// document.documentElement.style
-// .setProperty('--set-color-secondary', '#005ea2');
+    document.documentElement.style
+    .setProperty('--set-color-secondary', 'rgb(139, 126, 200)');
 
-// document.documentElement.style
-// .setProperty('--set-color-secondary-tint', '#73b3e7');
+    document.documentElement.style
+    .setProperty('--set-color-secondary-shade', 'rgb(94, 64, 157)');
+    
+    document.documentElement.style
+    .setProperty('--add-font-sans', 'Roboto');
 
-// document.documentElement.style
-// .setProperty('--set-color-secondary-shade', '#162e51');
+    document.documentElement.style
+    .setProperty('--add-font-serif', 'Merriweather');
 
-// document.documentElement.style
-// .setProperty('--link-style-color', 'var(--set-color-secondary)');
+    document.documentElement.style
+    .setProperty('--add-font-mono', 'Cousine');
+}
+
+function getCurrentYear() {
+    $("#getCurrentYear").html(new Date().getFullYear());
+}
+
+function truncate() {
+    shave('.truncate', 150);
+}

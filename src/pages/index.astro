@@ -2,8 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
-// import RecentPosts from '../components/RecentPosts.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!DOCTYPE html>
@@ -16,7 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		<Nav />
 
 		<header class="landing-header vds-bg--base p-t-6 p-b-4" style="background: url(/assets/product/images/landing-hero-landscape.jpg) center center no-repeat; background-size: auto; background-size: cover;">
-			<div class="container vds-text--white">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-xs-12">
 						<span>Hi, I'm Anton Simanov! 👋🏻</span>
@@ -30,7 +29,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
-						<p><a href="/work/" style="color:white;">Take a look at my work ⟶</a></p>
+						<p><a href="/work/">Take a look at my work ⟶</a></p>
 					</div>
 				</div>
 		
@@ -54,54 +53,70 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		</header>
 
 		<!-- Specialties -->
-		<section class="vds-bg--base-tint p-t-1">
+		<section class="vds-bg--black p-t-1">
 			<div class="container">
 				<div class="row p-y-5">
-
-					<div class="col-xs-12 col-md-4">
-						<div class="vds-card landing-card m-b-1">
-							<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
-
-							<div class="vds-card__body">
-								<p class="m-0 vds-text--secondary"><strong>Web, UI, UX Design</strong></p>
-								<p class="m-0">
-									I design websites and applications with the goal of providing solutions to problems, communicate clearly, and present visually pleasing products.
-								</p>
-							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--base vds-text--base-tint">
-								<span>Design Systems, Web Design, Responsive Design, App Design, UI Design, UX design, Adobe, Figma</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-md-4">
-						<div class="vds-card landing-card m-b-1">
-							<img src="/assets/product/images/blog/landing-dev.svg" alt="Front-end Web Development">
-
-							<div class="vds-card__body">
-								<p class="m-0 vds-text--secondary"><strong>Front-end Web Development</strong></p>
-								<p class="m-0">
-									My focus is on delivering fully ready, semantic, and accessible front-end assets. I specialize in Design System authoring as well as providing custom solutions.
-								</p>
-							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--base vds-text--base-tint">
-								<span>Design System Authoring, HTML5, CSS3, SASS, JavaScript, jQuery, Razor, PHP, Twig, API, Git</span>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-xs-12 col-md-4">
 						<div class="vds-card landing-card m-b-1">
 							<img src="/assets/product/images/blog/landing-analytics.svg" alt="Webmaster Services">
 
 							<div class="vds-card__body">
-								<p class="m-0 vds-text--secondary"><strong>Webmaster</strong></p>
+								<p class="m-0 vds-text--primary"><strong>Analytics</strong></p>
 								<p class="m-0">
 									Maintenance is not just about editing and authoring content. I review analytics, SEO, and audit for accesibility among perfoming various support roles.  
 								</p>
 							</div>
-							<div class="vds-card__footer justify-content-center vds-bg--base vds-text--base-tint">
+							<div class="vds-card__footer justify-content-center">
 								<span>Content Authoring, Design System Compliance, Accesibility Audit, SEO, Analytics Review</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="vds-card landing-card m-b-1">
+							<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
+
+							<div class="vds-card__body">
+								<p class="m-0 vds-text--primary"><strong>Project Management</strong></p>
+								<p class="m-0">
+									I lead and oversee staff by assigning, directing, and reviewing technical work. I study and follow project management practices and frameworks in constant pursuit of a better way to work with people.
+								</p>
+							</div>
+							<div class="vds-card__footer justify-content-center">
+								<span>Agile, Scrum, CSM, CSPO, Kanban, Waterfall</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-xs-12 col-md-4">
+						<div class="vds-card landing-card m-b-1">
+							<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
+
+							<div class="vds-card__body">
+								<p class="m-0 vds-text--primary"><strong>Web, UI, UX Design</strong></p>
+								<p class="m-0">
+									I design websites and applications with the goal of providing solutions to problems, communicate clearly, and present visually pleasing products.
+								</p>
+							</div>
+							<div class="vds-card__footer justify-content-center">
+								<span>Design Systems, Web Design, Responsive Design, App Design, UI Design, UX design, Adobe, Figma</span>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="col-xs-12 col-md-4">
+						<div class="vds-card landing-card m-b-1">
+							<img src="/assets/product/images/blog/landing-dev.svg" alt="Front-end Web Development">
+
+							<div class="vds-card__body">
+								<p class="m-0 vds-text--primary"><strong>Front-end Web Development</strong></p>
+								<p class="m-0">
+									My focus is on delivering fully ready, semantic, and accessible front-end assets. I specialize in Design System authoring as well as providing custom solutions.
+								</p>
+							</div>
+							<div class="vds-card__footer justify-content-center">
+								<span>Design System Authoring, HTML5, CSS3, SASS, JavaScript, jQuery, Razor, PHP, Twig, API, Git</span>
 							</div>
 						</div>
 					</div>
@@ -117,17 +132,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
         <div class="row p-t-5 p-b-3">
 
 			<div class="col-xs-12 col-md-6 p-b-1">
-                <h5>From the Blog</h5>
+                <h5 class="vds-text--primary">From the Blog</h5>
                 <p>Take a look at some of the things that keep me busy, be it work related, personal projects, or just life in general.</p>
 
                 <p class="m-0"><a href="/blog/" title="blog">Read all blog posts ⟶</a>
                 </p>
 
-				<img src="/assets/product/images/pill.jpg" alt="angry pill" style="display: block; margin: 0 auto;">
+				<!-- <img src="/assets/product/images/pill.jpg" alt="angry pill" style="display: block; margin: 0 auto;"> -->
             </div>
 
 			<div class="col-xs-12 col-md-6">                
-                <img src="/assets/product/images/asim-blog-rock.jpg" alt="island">
+                <img src="/assets/product/images/asim-blog-rock.svg" alt="island" style="width: 80%; height: auto; display: block; margin: 0 auto;">
             </div>
 
         </div>
