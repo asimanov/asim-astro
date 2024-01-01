@@ -30,6 +30,10 @@ body {
 	img {
 		width: 35%;
 	}
+
+	p {
+		font-family: var(--set-font-serif);
+	}
 }
 
 .footer-note,
@@ -81,4 +85,8 @@ pre > code {
 
 ::selection {
 	background: #205EA6;
+}
+
+.vds-button, a.vds-button {
+	--btn-font: var(--set-font-serif);
 }

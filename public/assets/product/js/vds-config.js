@@ -35,10 +35,10 @@ function cssPropWrite() {
     .setProperty('--set-color-secondary-shade', 'rgb(94, 64, 157)');
     
     document.documentElement.style
-    .setProperty('--add-font-sans', 'Roboto');
+    .setProperty('--add-font-sans', 'Archivo Black');
 
     document.documentElement.style
-    .setProperty('--add-font-serif', 'Merriweather');
+    .setProperty('--add-font-serif', 'PT Sans');
 
     document.documentElement.style
     .setProperty('--add-font-mono', 'Cousine');
