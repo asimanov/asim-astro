@@ -4,7 +4,7 @@ pubDate: 07/31/2019
 description: 'I don’t know if you’re ever struck with a great idea while you’re in the shower but it seems to happen to me more often than not these days. Between family life, work life, unpredictable issues with the house, kid getting sick, pets needing to go to the vet, babysitters falling ill, a whole myriad of priority problems arising seemingly out of the thin air; The free time that I used to have has shrunk down to maybe, possibly, a half hour a day.'
 author: Asim
 thumbnail: self
-background: mt03.jpg
+background: /Media/blog/mt03.jpg
 ---
 
 I don’t know if you’re ever struck with a great idea while you’re in the shower but it seems to happen to me more often than not these days. Between family life, work life, unpredictable issues with the house, kid getting sick, pets needing to go to the vet, babysitters falling ill, a whole myriad of priority problems arising seemingly out of the thin air; The "free time" that I used to have has shrunk down to maybe, possibly, a half hour a day. To make it more interesting that half hour, prime time for some "shower idea" productivity, begins to feel like It’s smothered by unrelenting feeling of exhaustion and palpable burnout. 

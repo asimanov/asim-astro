@@ -5,7 +5,7 @@ author: Asim
 pubDate: 09/26/2014
 tags: 'registration, process, cbyb, front-end, css3, asp, net'
 thumbnail: design
-background: cbybcover.jpg
+background: /Media/blog/cbybcover.jpg
 ---
 
 Working at the Air District has not only opened my eyes to the totality of our San Joaquin valley air quality issues but also exposed me to a multitude of opportunities to work on some truly inspiring projects. Check Before You Burn isn't a new program to our valley but it certainty is one of the most important ones that continues to be a cornerstone in reducing air pollution during the fall and winter months. With the 2014-15 season right around the corner our agency pushed for a new and comprehensive amendment to improve the existing rule (Rule 4901).

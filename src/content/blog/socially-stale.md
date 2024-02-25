@@ -5,7 +5,7 @@ author: Asim
 pubDate: 06/04/2014
 tags: 'social, network, media, design, layout'
 thumbnail: self
-background: social-design2.jpg
+background: /Media/blog/social-design2.jpg
 ---
 
 This morning a story on Linkedin's premium member profile page redesign caught my eye, and I'm sure I wasn't the only one intrigued by it. I actually got pretty excited since Linkedin's current design, especially mobile, is very specific to the purpose that it serves including solving its original problem: present a virtual rolodex and basic resume in an appealing manner within the social media framework. Having said that, there's always room for improvement and any news about it is  not exactly a small story.

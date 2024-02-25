@@ -5,7 +5,7 @@ author: Asim
 pubDate: 06/01/2014
 tags: 'Identity, Design, Logo, Brand, Standard'
 thumbnail: design
-background: gof1.jpg
+background: /Media/blog/gof1.jpg
 ---
 
 A couple months ago I was approached to develop an identity system for a new and exciting business located in Fresno California. Green Office Furnishings specializes in used office furniture re-sale as well as providing showrooms and options for brand new designer pieces. Needless to say I was very excited, besides I decided to look for a file cabinet that same week (it was all meant to be). 

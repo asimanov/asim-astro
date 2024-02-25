@@ -4,20 +4,29 @@ import Nav from '../components/Nav.astro';
 import WorkNav from '../components/WorkNav.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const { title, description, background, pubDate, updatedDate, heroImage } = Astro.props;
 ---
+
+<style>
+	.page-header {
+		padding: 0;
+	}	
+</style>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} image={background || undefined} />
 	</head>
+
 	<body>
 
 		<Nav />
 
 	<main>
 
-		<header class="page-header vds-bg--base" style="padding-top: 45rem;">
+		<header class="page-header vds-bg--base">
 			<div class="intro-card intro-card__work p-y-5" style="background: url(/assets/product/images/work-bw.jpg) 50% no-repeat; background-size: cover;">
 				<div class="container padding-top-rem-3">
 					<div class="post-header">

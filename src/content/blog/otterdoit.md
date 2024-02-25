@@ -5,7 +5,7 @@ author: Asim
 pubDate: 04/16/2022
 tags: 'Identity, Design, Logo, Brand, Standard'
 thumbnail: design
-background: otterdoit-hero.jpg
+background: /Media/blog/otterdoit-hero.jpg
 ---
 
 A good friend of mind asked if I could come up with an identity for his personal project right before the start of 2022. The concept was pretty straightforward and the overall process took a little over a week to complete from concept to finalized identity system. 

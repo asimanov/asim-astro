@@ -5,7 +5,7 @@ author: Asim
 pubDate: 12/11/2016
 tags: 'blogging, Wordpress, WP, social, network, security, vulnerabilities'
 thumbnail: self
-background: bg-pep-1.jpg
+background: /Media/blog/bg-pep-1.jpg
 ---
 
 Back in the day, like way back when the iPhone gen 1 was announced and Lucky Strike cigarettes ("It's Toasted") were still sold in the USA, I started to experiment with writing my thoughts and things online. Back then we had things like MySpace and Facebook where folks would write long updates in a "short-format" blog post... Remember Xanga? If you were a creative type there was also DeviantArt and eventually Flickr took to the scene as the proto-hipster place for photogs. 

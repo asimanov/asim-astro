@@ -5,7 +5,7 @@ author: Asim
 pubDate: 07/07/2014
 tags: 'Facebook, facebook, fb, social, science, testing, behavior, standards'
 thumbnail: self
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 It has been about a week since the Facebook-gate story broke out on the company engaging in a social science experiment, and as far as major news outlets are concerned we're all still up and arms about it. 

@@ -5,7 +5,7 @@ author: Asim
 pubDate: 05/02/2013
 tags: 'Pixelnaut Press, Pixelnaut, illustration, Space Yeti'
 thumbnail: illu
-background: yeti.jpg
+background: /Media/blog/yeti.jpg
 ---
 
 We previously featured the "Space Yeti" as a special download bonus on our Coming Soon page (boy, that feels like it was Yesterday!). In case you missed the conception of Pixelnaut Press and really want to take advantage of that special bonus, here it is for everyone to plaster all over their favorite devices. 

@@ -5,7 +5,7 @@ author: Asim
 pubDate: 04/11/2017
 tags: 'sass, scss, mixin, css, design'
 thumbnail: design
-background: footer-bg.svg
+background: /Media/blog/footer-bg.svg
 ---
 
 Have you ever run into this problem? The footer is designed beautifully but you just don't have enough content in the body to push the stuff far enough down the page that the footer sits flush with the bottom of the browser (in desktop vieport)? Yea, I'm talking about that awkward white space right under your beatifully designed... design. 

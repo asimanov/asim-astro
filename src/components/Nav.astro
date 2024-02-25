@@ -2,7 +2,22 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<nav class="navigation vds-bg--black">
+<style>
+    .navigation {
+        /* background: rgba(0,0,0,0.1); */
+        box-shadow: none;
+    }
+
+    .navigation__content {
+        ul {
+            li {
+                text-shadow: 1px 1px 4px black;
+            }
+        }
+    }
+</style>
+
+<nav class="navigation">
     <div class="container navigation__container">
         
         <div class="navigation__content">

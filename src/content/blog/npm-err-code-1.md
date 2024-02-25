@@ -5,7 +5,7 @@ author: Asim
 pubDate: 09/09/2023
 tags: 'Node, Node JS, NPM, npm, JS, Gulp, Gulpfile, Package'
 thumbnail: dev
-background: placeholder.jpg
+background: '/Media/blog/placeholder.jpg'
 --- 
 
 <style>

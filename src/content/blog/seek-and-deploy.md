@@ -5,7 +5,7 @@ author: Asim
 pubDate: 11/15/2016
 tags: 'project, management, deployment, launch, self'
 thumbnail: self
-background: header.jpg
+background: /Media/blog/header.jpg
 ---
 
 The hardest part about getting off your ass and getting your stuff together to publish a personal project that you've been working on (on and off for months) has to be actually *getting off your ass*. What I mean by that is hard-stopping your comfortable loop of designing, developing, re-designing, changing the spec, re-designing, developing, adding "completely justifiable" overhead, re-designing, scaling back, developing, on-and-on again hamster wheel that we are all way too comfortable to never get off of... until the whole thing, including us, is dead. 

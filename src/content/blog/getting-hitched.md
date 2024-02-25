@@ -5,7 +5,7 @@ author: Asim
 pubDate: 06/14/2014
 tags: 'Identity, Design, wedding, single-page, stationary, invitations, RSVP'
 thumbnail: design
-background: 01.jpg
+background: /Media/blog/01.jpg
 ---
 
 Almost 9 years ago I met my soon to be wife. Of Course at that time in our lives neither one of us realized that many years from that moment we would be surrounded by our friends and loved ones at an event that’s not too unfamiliar to the both of us… but this time all about us. So here we are, deep into our respective careers and in exactly one week from today we’re starting a family of our own (we even have an <a href="/Media/blog/zo.jpg" target="_blank">All-American dog</a>). 

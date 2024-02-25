@@ -5,7 +5,7 @@ author: Asim
 pubDate: 09/06/2014
 tags: 'CSS, drawing, SCSS, shapes'
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 One afternoon I was hungry and waiting for a burger. A colleague of mine asked if I can make him a sandwich out of CSS, I've been solving a lot of our problems with straight CSS for a couple weeks now. I was up to the challenge, since I've seen this done a bunch of times on Codepen I decided to throw my own CSS drawing together. Now, I'm not a rockstar when it comes to some crazy CSS wizardry that's out there regarding making full on compositions that quite frankly look like my old illustrations (which are done in the comfort of Illustrator). Here's my amateur attempt at a coke, burger, and fries.   

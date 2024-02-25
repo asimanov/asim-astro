@@ -5,7 +5,7 @@ description: 'So I was updating some of my projects and noticed that Gulp has a 
 author: Asim
 tags: 'npm, gulp, gulp 4, gulp 3'
 thumbnail: dev
-background: g3-g4-2.jpg
+background: /Media/blog/g3-g4-2.jpg
 ---
 
 So I was updating some of my projects and noticed that Gulp has a new stable version... This can't be real! It hasn't happened in half a decade... When it comes to updating anything I tend to move cautiously and upgrade bit by bit, looking for breaking changes that may not be obviously documented with new releases or known issues. This time, because it's been so long without an official release (I'm not much of a betta tester, I know v4 has been out for a while in that realm) I just pulled the trigger and moved fast... Breaking everything. 

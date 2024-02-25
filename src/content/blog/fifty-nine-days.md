@@ -5,7 +5,7 @@ author: Asim
 pubDate: 06/24/2013
 tags: '59 Days of Code, Competition'
 thumbnail: self
-background: preview.jpg
+background: /Media/blog/preview.jpg
 ---
 
 What do computer monitors, TV screens, mobile devices, banners, cupcakes, and enthusiasm have in common? All of them were boldly displayed at 59 Days of Code showcase last Saturday. Excited voices buzzed all around us as the public made their way through the booths looking halfway puzzled and inquisitive asking each team what they were looking at and what it all meant.

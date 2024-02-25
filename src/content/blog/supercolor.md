@@ -5,7 +5,7 @@ author: Asim
 pubDate: 04/04/2013
 tags: 'Pixelnaut Press, Pixelnaut, illustration, supercolor'
 thumbnail: illu
-background: supercolor.jpg
+background: /Media/blog/supercolor.jpg
 ---
 
 <strong>The Wallpaper Kitchen</strong> is the first of the Giveaway installments. Like most of us you probably change the look of your display as often as ... well, nobody else that you know. In this weekly article series you will find a unique set of wallpapers to suit your needs in changing-up your desktop and/or mobile environment.

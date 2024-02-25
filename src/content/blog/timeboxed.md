@@ -5,7 +5,7 @@ author: Asim
 pubDate: 06/01/2023
 tags: 'Scrum, agile, CSM, CSPO, ScrumMaster, Product Owner, timebox'
 thumbnail: self
-background: timebox-post.jpg
+background: /Media/blog/timebox-post.jpg
 --- 
 
 **After years of aspiration, I finally have the opportunity to share that I am now a Certified Scrum Master (CSM) and Certified Scrum Product Owner (CSPO). My journey, supported by the outstanding leadership of SJVAPCD and the encouragement of my management team, has just begun. This post aims to share my insights into the world of Scrum, detailing key takeaways such as timeboxing, Scrum teams, trust, self-management, ceremonies, the importance of separation of concerns, empirical process, and more.**

@@ -5,7 +5,7 @@ author: Asim
 pubDate: 11/05/2016
 tags: 'blog, flat-file, cms'
 thumbnail: self
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 After over two years of silence I'm finally making my way back to this place. Speaking of this place, it's really not *this* place but *that same ol' place* in a new location... with a fresh new coat of paint... and upgraded parts under the hood... and really not at all that *same ol' place*. 

@@ -5,7 +5,7 @@ author: Asim
 pubDate: 10/08/2014
 tags: 'registration, process, tracker, responsive, design, adaptive, cbyb, front-end, css3'
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 About a week ago I posted a quick synopsis on the last major project that I've been working on, Check Before You Burn Registration. In that article I mentioned that I would put up a quick write up about a responsive progress tracker that I thought up while working on the registration. Since the CBYB Registration project specs were pretty rigid, pun intended (fixed dimensions), I wasn't concerned with making it super adaptable. However, building a tracker to begin with got me thinking of how we could possibly achieve a rough responsive flow without removing too much information and conveying just the gist of what a progress tracker is really all about.

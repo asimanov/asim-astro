@@ -4,7 +4,7 @@ pubDate: 12/22/2019
 description: 'I don’t know if you’re ever struck with a great idea while you’re in the shower but it seems to happen to me more often than not these days. Between family life, work life, unpredictable issues with the house, kid getting sick, pets needing to go to the vet, babysitters falling ill, a whole myriad of priority problems arising seemingly out of the thin air; The free time that I used to have has shrunk down to maybe, possibly, a half hour a day.'
 author: Asim
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 Earlier this year I was a little bit caught off guard when I read a very long and detailed post introducing Sass modules. If you haven't read it already and you author css with Sass, I urge you to get all caught up about this new feature by reading [this article](https://css-tricks.com/introducing-sass-modules/?target=_blank&rel=noopener,noreferrer "Introducing SASS Modules") which was expertly written by [Miriam Suzanne](https://twitter.com/mirisuzanne?target=_blank&rel=noopener,noreferrer "Mirriam Suzanne Twitter Profile")... Yes, new, for four years there's been a freeze on new features and well, it's all over!

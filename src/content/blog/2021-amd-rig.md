@@ -4,7 +4,7 @@ pubDate: 03/05/2021
 description: 'Hearing new noises coming from the main workhorse rig is never exciting. Lately the fans have been ramping up most of the time, it sputters on audio output whenever more than two applications are running, it''s just tired. After 9 years of service, doing everything I asked of it and still hanging on, that''s pretty damn impressive and one of the main reasons that I always suggest building your own work machine rather than buying something already put together.'
 author: Asim
 thumbnail: self
-background: amd11.jpg
+background: /Media/blog/amd11.jpg
 ---
 
 Hearing new noises coming from the main workhorse rig is never exciting. Lately the fans have been ramping up most of the time, it sputters on audio output whenever more than two applications are running, it's just tired. After 9 years of service, doing everything I asked of it and still hanging on, that's pretty damn impressive and one of the main reasons that I always suggest building your own work machine rather than buying something already put together. 

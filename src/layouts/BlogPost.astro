@@ -11,7 +11,7 @@ const { title, description, pubDate, updatedDate, heroImage, author, tags, thumb
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={background || undefined} />
 		<style>
 			.post-header-img {
                 position: relative;
@@ -24,12 +24,22 @@ const { title, description, pubDate, updatedDate, heroImage, author, tags, thumb
                 background-size: cover;
                 border-radius: 4rem;
             }
+
+			.page-header {
+				padding: 0;
+			}
+
+			.vds-card {
+				background: rgb(16, 15, 15);
+			}
 		</style>
 	</head>
 
 	<body>
 		<Nav />
 		<main>
+			<div class="post-header-img" style={`background-image:url(${background})`}></div>
+			
 			<header class="page-header">
 				<div class="container padding-top-rem-3">
 					<div class="post-header">
@@ -62,8 +72,6 @@ const { title, description, pubDate, updatedDate, heroImage, author, tags, thumb
 							</time>	
 						</span>
 					</div>
-
-					<div class="post-header-img" style={`background-image:url(/Media/blog/${background})`}></div>
 
 					<div class="post__content padding-left-2 padding-right-2 padding-top-1 padding-bottom-2">
 						<slot />

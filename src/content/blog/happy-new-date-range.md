@@ -5,7 +5,7 @@ author: Asim
 pubDate: 01/13/2017
 tags: 'js, date, range, mistake, goofed, dev, cbyb, forecast, aqa, json, xml'
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 Sometimes you make a mistake. Sometimes you make that same mistake in more than one place. Sometimes you make an amateur mistake that you wish that you would have caught before starting a New Year selebration... You just simply made a mental error months ago that resulted in a week of appology and 15 minutes of office hours fixing the one thing you were so sure that you had solved once and for all. Sometimes you just messed up and will forever remember that "sometimes". 

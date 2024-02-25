@@ -4,7 +4,7 @@ pubDate: 05/27/2021
 description: 'One of the key features that I focused on for my little Variable Design System was the ability to set CSS custom properties with JavaScript. At the moment this is done with a simple function that I will go over in this post. For future development I am working on setting up a more structured way to interact with the codebase using json to configure almost any and all part of global css variable list.'
 author: Asim
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 One of the key features that I focused on for my little **Variable Design System** was the ability to set CSS custom properties with JavaScript. At the moment this is done with a simple function that I will go over in this post. For future development I'm working on setting up a more structured way to interact with the codebase using json to configure almost any and all part of global css variable list. Variable Design System isn't meant to be a "css in js" kind of setup, it's a light weight and minified css file that is driven by css custom properties... and thus it has a structure right out of the box that you can interact with.  

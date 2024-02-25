@@ -5,7 +5,7 @@ author: Asim
 pubDate: 11/28/2016
 tags: 'css, scss, library, framework, work, O3, design, dev, style, guide, design, components, ui, patterns'
 thumbnail: dev
-background: o3-small.jpg
+background: /Media/blog/o3-small.jpg
 ---
 
 Over the past few years I have worked on a lot of projects at my job as both designer and front-end. Almost everything that I had a hand in was undoubtedly different but with every new product published one thing became clear: we needed a better way to unify and extend our corporate design and ui patterns. With this goal in mind I began to build custom CSS *libraries* * for each new project. The idea behind this was to identify common ui patterns and establish a basic design "alphabet" which could be used to construct prototypes and ready-made products on the fly... before diving into design details and product requirements. 

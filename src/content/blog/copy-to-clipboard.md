@@ -5,7 +5,7 @@ author: Asim
 pubDate: 05/04/2018
 tags: 'js, dev, javascript, mail, link, ahref'
 thumbnail: dev
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 A few years ago I finally figured out that "mailto:" was deprecated by (almost) all browsers. This is embarassing because I should be on top of such things BUT in my defense I deal with that link-style all over the place. If you're supporting ancient browsers such as IE9 this is a none-issue but we live in the-almost year of 2020 and should correct old habits as they ripen.  

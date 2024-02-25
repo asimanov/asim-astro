@@ -5,7 +5,7 @@ author: Asim
 pubDate: 01/02/2023
 tags: 'ASIM, illustration, illu, logo, identity, design, film noir'
 thumbnail: dev
-background: astro-build-preview.jpg
+background: /Media/blog/astro-build-preview.jpg
 ---
 
 **A new year and a new-ish look! A lot has happened in 2022 and I'm sure a lot more will happen in 2023. I'd rather be doing too much than nothing at all. In preparation for the new year and before a major change in my family takes place I decided to spend some time to clear away the cobwebs from this place and updating it *just enough*. Have a look through what I've done and check out my plans for my illustration work at the end of this update.** 

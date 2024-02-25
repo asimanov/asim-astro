@@ -5,7 +5,7 @@ author: Asim
 pubDate: 05/30/2014
 tags: 'Identity, Design, Logo, Brand, Standard, Collecto'
 thumbnail: design
-background: collecto1.jpg
+background: /Media/blog/collecto1.jpg
 ---
 
 Last year we (NoTwelve) had the pleasure of working with one of the most easy going and highly driven new producer/DJ in the Central Valley. The issue was simple: he needed an identity. A couple years ago I actually did a quick illustration for his first act, a New Year show. <a href="../img/post/collecto0.jpg" target="_blank">As you can see his brand came out hard and strong, which is always a huge plus when working on the actual identity</a>. At the time the logo itself identified with his live act, a robot from outer space set to unleash groovy beats on his human captives. Recently Captain Collecto dropped the costume but the brand sticks and is largely carried by the logo itself.

@@ -10,27 +10,32 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
+<style>
+	.page-header {
+		padding: 0;
+	}	
+
+	ul {
+		list-style-type: none;
+		padding: unset;
+	}
+	ul li {
+		display: flex;
+	}
+	ul li time {
+		flex: 0 0 130px;
+		font-style: italic;
+		color: #595959;
+	}
+	ul li a:visited {
+		color: #8e32dc;
+	}
+</style>
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul {
-				list-style-type: none;
-				padding: unset;
-			}
-			ul li {
-				display: flex;
-			}
-			ul li time {
-				flex: 0 0 130px;
-				font-style: italic;
-				color: #595959;
-			}
-			ul li a:visited {
-				color: #8e32dc;
-			}
-		</style>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/shave/5.0.2/shave.min.js" is:inline></script>
 
@@ -38,7 +43,7 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Nav />
 		<main>
-			<header class="page-header vds-bg--base" style="padding-top: 45rem;">
+			<header class="page-header vds-bg--base">
 				<div class="intro-card intro-card__blog p-y-5" style="background: url(/assets/product/images/blog-bw-1.jpg) 50% no-repeat; background-size: cover;">
 					<div class="container padding-top-rem-3">
 						<div class="post-header">

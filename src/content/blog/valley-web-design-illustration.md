@@ -5,7 +5,7 @@ author: Asim
 pubDate: 07/15/2022
 tags: 'Valley Web Design, illustration, illu, logo, identity'
 thumbnail: illu
-background: valley-web-design-preview.jpg
+background: /Media/blog/valley-web-design-preview.jpg
 ---
 
 *"Valley Web Design"* is a project that I started in hopes to encompass my skills under one umbrella. The overall goal was to offer and provide a set of services for small businesses while keeping the overhead as low as possible. Most typical things that would require to setup and run have been completed but life had other plans and the project is now on hold.

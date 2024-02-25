@@ -5,7 +5,7 @@ description: 'Seven months ago we had a crazy idea. Perhaps it wasn’t as crazy
 author: Asim
 tags: 'Pixelnaut Press, Pixelnaut'
 thumbnail: self
-background: sim-keys.jpg
+background: /Media/blog/sim-keys.jpg
 ---
 
 Seven months ago we had a crazy idea. Perhaps it wasn’t as crazy of an idea as flying to the Moon and back, but we knew that from the feeling of the creative rush that we were experiencing… it wouldn’t be much different from conquering outer space.

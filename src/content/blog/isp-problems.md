@@ -5,7 +5,7 @@ author: Asim
 pubDate: 02/06/2014
 tags: 'post,internet'
 thumbnail: self
-background: placeholder.jpg
+background: /Media/blog/placeholder.jpg
 ---
 
 When the internet service was unexpectadly severed from my existence as I finally made it home from work I began to wonder how much impact that this incredibly simple tool had on my daily life. I must admit that I'm one of those people who were left stuck in the "feature-phone" era (which lived and died in its infancy) and thus I was left completely cut off from the rest of the world as far as any of my friends were concerned. At the same time I'm a professional that lives and thrives from the hard work and toil of developing this none existant domain. I'm that guy in the background who fixes those awkward page navigations, the flow of content, the calls to action, the dreaded bloat of information overload. I'm a web developer, there are many like me, and I love my roll in the information sector. Yet here I am without my highway, my current, my wild crop -- the internet. 
