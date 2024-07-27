@@ -1,0 +1,30 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<style>
+	.header-logo-link {
+		display: block;
+		border: none;
+		width: 100px;
+		height: auto;
+	}
+</style>
+
+<header class="landing-header p-t-1">
+	<div class="row">
+		<div class="col-6">
+			<HeaderLink href="/" class="header-logo-link">
+				<img class="header-img" src="/assets/product/images/asim.svg" alt="ASIM" title="ASIM">
+			</HeaderLink>	
+		</div>
+
+		<div class="col-6">
+			<div class="navigation__color-scheme">
+				<label><input name="color-scheme" type="radio" value="light dark" checked=""> System</label>
+				<label><input name="color-scheme" type="radio" value="light">Light</label>
+				<label><input name="color-scheme" type="radio" value="dark">Dark</label>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,43 +1,91 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
-<style>
-    .navigation {
-        /* background: rgba(0,0,0,0.1); */
-        box-shadow: none;
-    }
-
-    .navigation__content {
-        ul {
-            li {
-                text-shadow: 1px 1px 4px black;
-            }
-        }
-    }
-</style>
-
 <nav class="navigation">
-    <div class="container navigation__container">
+    <div class="navigation__container m-y-1">
         
         <div class="navigation__content">
 
-            <HeaderLink href="/" class="navigation__title">
-                <img class="img" src="/assets/product/images/asim.svg?v=20231229.1" alt="ASIM" title="ASIM">
-            </HeaderLink>
-
-            <ul class="navigation__list vds-text--white">
+            <ul class="navigation__list">
                 <li>
-                    <HeaderLink href="/blog" class="navigation__link"><i class="fad fa-home"></i> <span>Blog</span></HeaderLink>
+                    <HeaderLink href="/home" class="navigation__link" class:list={[className, { active: isActive }]} {...props}>
+                        <span>Home</span>
+                    </HeaderLink>
                 </li>
                 <li>
-                    <HeaderLink href="/about" class="navigation__link"><i class="fad fa-flag"></i> <span>About</span></HeaderLink>
+                    <HeaderLink href="/blog" class="navigation__link">
+                        <span>Blog</span>
+                    </HeaderLink>
                 </li>
                 <li>
-                    <HeaderLink href="/work" class="navigation__link"><i class="fad fa-briefcase"></i> <span>Work</span></HeaderLink>
+                    <HeaderLink href="/about" class="navigation__link">
+                        <span>About</span>
+                    </HeaderLink>
+                </li>
+                <li>
+                    <HeaderLink href="/work" class="navigation__link">
+                        <span>Work</span>
+                    </HeaderLink>
                 </li>
             </ul>
 
         </div>
     </div>
 </nav> 
+
+<style>
+    .navigation {
+        /* background: rgba(0,0,0,0.1); */
+        /* box-shadow: none; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        a {
+            border: none;
+        }
+    }
+
+    .navigation__color-scheme {
+        width: 100%;
+    }
+
+    .navigation__container {
+        width: 100%;
+    }
+
+    .navigation__title {
+        display: block;
+
+        img {
+            width: 80px;
+            height: auto;
+        }
+    }
+
+    .navigation__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            width: 100%;
+            padding: 0;
+            justify-content: space-between;
+        }
+    }
+</style>
