@@ -13,27 +13,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 
-<style>
-	.landing-contact {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-
-		li {
-			a {
-				border: none;
-
-				&:after {
-					display: none;
-				}
-			}
-		}
-	}
-</style>
-
 	<body>
 		<div class="App">
 			<div class="Layout">
@@ -66,7 +45,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 							</div>
 					
 							<div class="row">
-								<div class="col-12 m-t-1">
+								<div class="col-12 m-y-1">
 									<p class="m-0">Have a question for me? Let's chat!</p>
 								</div>
 					
@@ -84,73 +63,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						</div>
 					</section> 
 
-					<!-- Specialties -->
+					<!-- About Me -->
 					<section class="p-t-1">
 						<div class="container">
 							<div class="row p-y-2">
 
-								<div class="col-xs-12 col-md-4">
-									<div class="vds-card landing-card m-b-1">
-										<img src="/assets/product/images/blog/landing-analytics.svg" alt="Webmaster Services">
-
-										<div class="vds-card__body">
-											<h6 class="m-0 vds-text--primary">Analytics</h6>
-											<p class="m-0">
-												Maintenance is not just about editing and authoring content. I review analytics, SEO, and audit for accesibility among perfoming various support roles.  
-											</p>
-										</div>
-										<div class="vds-card__footer justify-content-center">
-											<span>Content Authoring, Design System Compliance, Accesibility Audit, SEO, Analytics Review</span>
-										</div>
-									</div>
+								<div class="col-xs-12 col-md-4">                
+									<img src="/assets/product/images/404.svg" alt="404" style="width: 100%; height: auto; display: block; margin: 0 auto;">
 								</div>
 
-								<div class="col-xs-12 col-md-4">
-									<div class="vds-card landing-card m-b-1">
-										<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
-
-										<div class="vds-card__body">
-											<h6 class="m-0 vds-text--primary">Project Management</h6>
-											<p class="m-0">
-												I lead and oversee staff by assigning, directing, and reviewing technical work. I study and follow project management practices and frameworks in constant pursuit of a better way to work with people.
-											</p>
-										</div>
-										<div class="vds-card__footer justify-content-center">
-											<span>Agile, Scrum, CSM, CSPO, Kanban, Waterfall</span>
-										</div>
-									</div>
-								</div>
-
-								<!-- <div class="col-xs-12 col-md-4">
-									<div class="vds-card landing-card m-b-1">
-										<img src="/assets/product/images/blog/landing-design.svg" alt="Design">
-
-										<div class="vds-card__body">
-											<p class="m-0 vds-text--primary"><strong>Web, UI, UX Design</strong></p>
-											<p class="m-0">
-												I design websites and applications with the goal of providing solutions to problems, communicate clearly, and present visually pleasing products.
-											</p>
-										</div>
-										<div class="vds-card__footer justify-content-center">
-											<span>Design Systems, Web Design, Responsive Design, App Design, UI Design, UX design, Adobe, Figma</span>
-										</div>
-									</div>
-								</div> -->
-
-								<div class="col-xs-12 col-md-4">
-									<div class="vds-card landing-card m-b-1">
-										<img src="/assets/product/images/blog/landing-dev.svg" alt="Front-end Web Development">
-
-										<div class="vds-card__body">
-											<h6 class="m-0 vds-text--primary">Web Development</h6>
-											<p class="m-0">
-												My focus is on delivering fully ready, semantic, and accessible front-end assets. I specialize in Design System authoring as well as providing custom solutions.
-											</p>
-										</div>
-										<div class="vds-card__footer justify-content-center">
-											<span>Design System Authoring, HTML5, CSS3, SASS, JavaScript, jQuery, Razor, PHP, Twig, API, Git</span>
-										</div>
-									</div>
+								<div class="col-xs-12 col-md-8 p-b-1">
+									<p class="m-b-1">
+										I provide comprehensive Webmaster Services, including analytics review, SEO, accessibility audits, and various support roles. Leading technical projects, I enhance team collaboration using Agile and other management practices. My front-end web development expertise ensures the delivery of semantic and accessible assets, specializing in Design System authoring and custom solutions. 
+									</p>
+					
+									<p class="m-0"><a href="/about/" title="blog">Read more about me ⟶</a>
+									</p>
 								</div>
 
 							</div>
@@ -173,3 +101,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</div>
 	</body>
 </html>
+
+<style>
+	.landing-contact {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		li {
+			a {
+				border: none;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+</style>

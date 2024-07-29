@@ -46,6 +46,10 @@
 	}
 } */
 
+a:link, a:visited {
+  --link-style-color: var(--set-color-red);
+}
+
 .post__meta-thumbnail {
     background: none;
 }
