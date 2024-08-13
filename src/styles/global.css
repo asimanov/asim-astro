@@ -47,7 +47,7 @@
 } */
 
 a:link, a:visited {
-  --link-style-color: var(--set-color-red);
+  --link-style-color: var(--set-color-cyan);
 }
 
 .post__meta-thumbnail {

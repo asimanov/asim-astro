@@ -17,7 +17,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 
             <ul class="navigation__list">
                 <li>
-                    <HeaderLink href="/home" class="navigation__link" class:list={[className, { active: isActive }]} {...props}>
+                    <HeaderLink href="/" class="navigation__link" class:list={[className, { active: isActive }]} {...props}>
                         <span>Home</span>
                     </HeaderLink>
                 </li>

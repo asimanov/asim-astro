@@ -1,7 +1,9 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Nav from '../components/Nav.astro';
-import Footer from "../components/Footer.astro";
+import Header from '../components/Header.astro';
+import Aside from '../components/Aside.astro';
+import Footer from '../components/Footer.astro';
 
 // type Props = CollectionEntry<'about'>['data'];
 
@@ -25,73 +27,32 @@ const { title, description, background, pubDate, updatedDate, heroImage } = Astr
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={background || undefined} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-  				border-top: 1px solid #DDD;
-				margin: 1rem 0;
-			}
-
-            .page-header {
-                padding: 0;
-            }
-		</style>
 	</head>
 
 	<body>
-        <Nav />
+        <div class="App">
+			<div class="Layout">
 
-        <header class="page-header">
-            <div class="intro-card intro-card__about p-y-2" style="background: url(/assets/product/images/colophon-bw-1.jpg) 50% no-repeat; background-size: cover;">
-                <div class="container">
-                    
-                    <div class="row">
-    
-                        <div class="col-12 p-y-2">               
-                            <img src="/assets/product/images/asim-self-bw.png" alt="Anton reads a book">
-                        </div>
-    
-                        <div class="col-12">
-                            <h3>Who I am</h3>
+				<div class="Masthead">
+					<Header />
+				</div>
 
-                            <p>My name is <strong>Anton Simanov</strong>. I am a father, project manager, web designer, front-end developer, life-time UX apprentice, novice farmer, hardware enthusiast and research advocate out of Central California. I can feel pixels growing out of my mustache.</p>
-    
-                                                </div>
-    
-                        <div class="col-12 p-t-1">
-                            <h3>About me</h3>
-    
-                            <div class="row">
-                            <!-- <div class="col-md-6">
-                            <p>Since I was a young boy I was fascinated by signs and how everyone around me inferred them, and much more, how differently we all do while understanding the basic messages which are laid out in front of us.</p>
-                            </div> -->
-    
-                            <div class="col-12">
-                            <p>Visual communication is one of the most important parts of humanity that will never cease to amaze me. I study and follow project management practices and Agile frameworks in constant pursuit of a better way to work with people.</p>
-                            </div>
-                            </div>
-                        </div>
-    
-                        
-                    </div>
-    
-                </div>
-            </div>
-    
-            
-        </header> 
+                <main class="Main">
+					<Nav />
 
-		<div class="p-t-1 p-b-2">
-            <div class="container post">
-                <section class="section">
                     <slot />
-                </section>
-            </div>
-        </div>
+                
+                </main>
 
-		<Footer />
+                <div class="Aside">
+					
+					<Aside />
+
+				</div>
+
+            </div>
+
+            <Footer />
+        </div>
 	</body>
 </html>

@@ -13,8 +13,8 @@ function cssPropWrite() {
     .setProperty('--add-font-mono', 'Cousine');
 
     document.documentElement.style
-    .setProperty('--set-color-primary', 'var(--set-color-red)');
+    .setProperty('--set-color-primary', 'var(--set-color-cyan)');
 
     document.documentElement.style
-    .setProperty('--set-color-secondary', 'var(--set-color-blue)');
+    .setProperty('--set-color-secondary', 'var(--set-color-red)');
 }
