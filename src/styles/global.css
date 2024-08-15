@@ -50,12 +50,8 @@ a:link, a:visited {
   --link-style-color: var(--set-color-cyan);
 }
 
-.post__meta-thumbnail {
-    background: none;
-}
-
-.post__meta-date {
-    color: var(--set-color-base);
+p {
+  text-wrap: balance;
 }
 
 pre > code {

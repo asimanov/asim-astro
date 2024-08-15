@@ -2,6 +2,8 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Nav from '../components/Nav.astro';
+import Header from '../components/Header.astro';
+import Aside from '../components/Aside.astro';
 import Footer from '../components/Footer.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -12,79 +14,124 @@ const { title, description, pubDate, updatedDate, heroImage, author, tags, thumb
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={background || undefined} />
-		<style>
-			.post-header-img {
-                position: relative;
-                height: 400px;
-                width: 100%;
-                margin-bottom: 1.5em;
-            }
 
-			.post-header-img {
-                background-size: cover;
-                border-radius: 4rem;
-            }
+<style>
+	/* .entry-header {
+		margin-bottom: 2em;
+	} */
 
-			.vds-card {
-				background: rgb(16, 15, 15);
+	.entry-header__hero {
+		padding: 5em 0;
+		border-radius: 6rem;
+		margin-bottom: 1em;
+		background-size: cover;
+	}
+
+	.post__content {
+		p {
+			margin-bottom: 1em;
+		}
+
+		h2 {
+			--heading-underline-color: var(--set-color-base-inverse);
+			position: relative;
+			margin-bottom: 26rem;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 60rem;
+				height: 6rem;
+				background: var(--heading-underline-color);
+				position: absolute;
+				left: 0;
+				bottom: -10rem;
 			}
+		}
+	}
 
-			ul {
-				list-style-type: disc !important;
-				list-style: disc !important; 
-				margin-left: 1em !important;
-				display: none !important;
-			}
+	.post__meta {
+		font-family: var(--set-font-mono);
+		margin-bottom: 10rem;
+	}
 
-		</style>
+	h1 {
+		--heading-underline-color: var(--set-color-base-inverse);
+		position: relative;
+		margin-bottom: 26rem;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 100rem;
+			height: 6rem;
+			background: var(--heading-underline-color);
+			position: absolute;
+			left: 0;
+			bottom: -10rem;
+		}
+	}
+</style>
+
 	</head>
 
 	<body>
-		<Nav />
 		<main>
-			<div class="post-header-img" style={`background-image:url(${background})`}></div>
-			
-			<header class="page-header">
-				<div class="container padding-top-rem-3">
-					<div class="post-header">
-					
-						<section class="section">
-							<div>
-								<h2 class="m-0">{title}</h2>
+
+			<div class="App">
+				<div class="Layout">
+	
+					<div class="Masthead">
+						<Header />
+					</div>
+	
+					<main class="Main">
+						<Nav />
+						
+						<header class="entry-header">
+							<div class="entry-header__hero" style={`background-image:url(${background})`}>
+								
 							</div>
-						</section>
-		
-					</div>
-				</div>
-			</header>
+						
+							<h1>{title}</h2>
+						</header>
 			
-			<div class="container container--reduced post">
-				<section class="section">
+						<div class="post">
+							<section class="section">
 
-					<div class="post__meta">
+								<div class="post__meta">
+									<span class="post__meta-author">{author}</span> 
+									<span class="post__meta-date">  
+										<time>
+											{new Date(pubDate).toLocaleDateString('en-us', {
+												year: 'numeric',
+												month: 'numeric',
+												day: 'numeric',
+											})}
+										</time>	
+									</span>
+								</div>
 
-						<img src={`/assets/product/images/blog/blog-${thumbnail}.svg`} alt={thumbnail} class="post__meta-thumbnail"/>
-
-						<span class="post__meta-author">{author}</span> 
-						<span class="post__meta-date">  
-							<time>
-								{new Date(pubDate).toLocaleDateString('en-us', {
-									year: 'numeric',
-									month: 'numeric',
-									day: 'numeric',
-								})}
-							</time>	
-						</span>
-					</div>
-
-					<div class="post__content padding-left-2 padding-right-2 padding-top-1 padding-bottom-2">
-						<slot />
-					</div>
+								<div class="post__content">
+									<slot />
+								</div>
+							
+							</section>
+						</div>
+					
+					</main>
 				
-				</section>
-			</div>
-		
+					<div class="Aside">
+					
+						<Aside />
+	
+					</div>
+	
+				</div>
+	
 			<Footer />
-		</main>
+
+		</div>
+			
 	</body>
 </html>

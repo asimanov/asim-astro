@@ -1,6 +1,8 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Nav from '../../components/Nav.astro';
+import Header from '../../components/Header.astro';
+import Aside from '../../components/Aside.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
@@ -11,53 +13,154 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <style>
-	.page-header {
-		padding: 0;
-	}	
+.entry-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 -10rem;
+}
 
-	ul {
-		list-style-type: none;
-		padding: unset;
-	}
-	ul li {
-		display: flex;
-	}
-	ul li time {
-		flex: 0 0 130px;
-		font-style: italic;
-		color: #595959;
-	}
-	ul li a:visited {
-		color: #8e32dc;
-	}
+.entry {
+  --card-box-shadow: none;
+	
+  padding: 8rem 10rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border-bottom: none;
+  background: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h5 {
+	color: var(--set-color-cyan);
+  }
+
+  &:hover {
+	color: initial;
+  }
+}
+
+time {
+	font-family: var(--set-font-mono);
+}
+
+.excerpt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: balance;
+}
+
+h5 {
+	text-wrap: pretty;
+}
+
+.entry:first-child {
+  grid-column: 1 / -1; /* Span all columns */
+}
+
+.header h3 {
+	text-wrap: pretty;
+}
+
+@media (max-width: 900px) {
+  .entry-container {
+    gap: 10px;
+  }
+
+  .entry:first-child {
+    grid-column: 1 / -1; /* Ensure it spans all columns on smaller screens as well */
+  }
+}
+
+@media (max-width: 600px) {
+  .entry-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .entry:first-child {
+    grid-column: 1 / -1; /* Ensure it spans all columns on very small screens as well */
+  }
+}
 </style>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/shave/5.0.2/shave.min.js" is:inline></script>
-
 	</head>
 	<body>
-		<Nav />
-		<main>
-			<header class="page-header vds-bg--base">
-				<div class="intro-card intro-card__blog p-y-5" style="background: url(/assets/product/images/blog-bw-1.jpg) 50% no-repeat; background-size: cover;">
-					<div class="container padding-top-rem-3">
-						<div class="post-header">
-						
-							<section class="section">
-								<div>
-									<h2 class="m-0" style="text-align: center;">My thoughts about things</h2>
-								</div>
-							</section>
-		
-						</div>
-					</div>
+		<div class="App">
+			<div class="Layout">
+
+				<div class="Masthead">
+					<Header />
 				</div>
-			</header>
+
+				<main class="Main">
+					<Nav />
+
+					<header>
+						<div class="p-y-5 m-b-2" style="background: url(/assets/product/images/blog-bw-2.jpg) 50% no-repeat; background-size: cover; border-radius: 6rem;">
+							
+							<h3 class="m-0 bsln-text--white" style="text-align: center;">My thoughts about things</h3>
+			
+						</div>
+					</header> 
+
+					<!-- <img src="/assets/product/images/blog-bw-2.jpg" style="height: auto; width: 100%; border-radius: 6rem;" class="m-b-2" alt="blog"> -->
+
+					<!-- <h2 class="m-b-2">My thoughts about things</h2> -->
+
+					<div class="entry-container">
+		
+						{
+							posts.map((post) => (
+								
+								<a href={`/blog/${post.slug}/`} class="entry bsln-card">
+
+									<div>	
+									<p>
+										<time class="font-size--xs">
+											{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+												year: 'numeric',
+												month: 'numeric',
+												day: 'numeric',
+											})}
+										</time>	
+									</p>
+
+									<h5>{post.data.title}</h5>
+									</div>
+
+									<div><p class="excerpt">{post.data.description}</p></div>
+									
+								</a>
+							))
+						}
+						
+					</div>
+
+				</main>
+				
+				<div class="Aside">
+					
+					<Aside />
+
+				</div>
+
+			</div>
+
+		<Footer />
+
+		</div>
+
+			<!-- 
 
 			<div class="blog-legend-container">
 				<div class="container">
@@ -83,77 +186,8 @@ const posts = (await getCollection('blog')).sort(
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 
-			<section id="body">
-				<div class="wrapper padding">
 
-					<div class="container">
-						<section class="section p-b-4">
-
-<div class="entry">
-	
-	{
-		posts.map((post) => (
-			<div class="entry__post">
-			
-				<a href={`/blog/${post.slug}/`} class="vds-card">
-					<div class="row m-0">
-
-						<div class="col-4 entry__img">
-							<img src={`/assets/product/images/blog/blog-${post.data.thumbnail}.svg`} alt={post.data.thumbnail}/>
-						</div>
-
-						<div class="meta col-8">
-							<p>
-								<time>
-									{new Date(post.data.pubDate).toLocaleDateString('en-us', {
-										year: 'numeric',
-										month: 'numeric',
-										day: 'numeric',
-									})}
-								</time>	
-							</p>
-						</div>
-
-						<div class="col-12 entry__content">
-							<h5 class="p-b-1">{post.data.title}</h5>
-							<div><p class="truncate">{post.data.description}</p></div>
-						</div>
-
-					</div>
-				</a>
-			
-			</div>
-		))
-	}
-
-</div>
-
-						</section>
-					</div>
-				
-				</div>
-			</section>
-
-			<!-- <section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section> -->
-		</main>
-		<Footer />
 	</body>
 </html>
