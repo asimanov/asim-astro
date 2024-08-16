@@ -6,17 +6,31 @@ import HeaderLink from './HeaderLink.astro';
 .header {
 	display: flex;
 	flex-direction: row;
-	width: 50%;
-	background: var(--set-color-base-black);
-	padding: 10rem;
+	width: 250rem;
+	/* background: var(--set-color-base-black); */
+	/* padding: 10rem; */
 	margin-bottom: 32rem;
-	border-radius: 0 0 12rem 12rem;
-	border: 4rem solid light-dark(transparent, var(--set-color-base-900));
-	border-top: 0;
+	/* border-radius: 0 0 12rem 12rem; */
+	/* border: 4rem solid light-dark(transparent, var(--set-color-base-900)); */
+	/* border-top: 0; */
 
 	@media (max-width: 900px) {
 		margin-bottom: 0;
 	}
+}
+
+.header-logo-link {
+    background-size: contain;
+    background-repeat: no-repeat;
+	/* background-image: url('/assets/product/images/asim-dark.svg'); */
+}
+
+html.light-mode .header-logo-link {
+    background-image: url('/assets/product/images/asim-light.svg');
+}
+
+html.dark-mode .header-logo-link {
+    background-image: url('/assets/product/images/asim-dark.svg');
 }
 
 .header__brand {
@@ -28,7 +42,7 @@ import HeaderLink from './HeaderLink.astro';
 	display: block;
 	border: none;
 	width: 100px;
-	height: auto;
+	height: 50px;
 	line-height: 0;
 }
 
@@ -63,7 +77,7 @@ import HeaderLink from './HeaderLink.astro';
 }
 
 .navigation__color-scheme input + i {
-    opacity: 0.5;
+    opacity: 0.3;
 	font-size: 20rem;
 }
 
@@ -88,10 +102,8 @@ import HeaderLink from './HeaderLink.astro';
 <header class="header p-t-1">
 	
 	<div class="header__brand">
-		<HeaderLink href="/" class="header-logo-link">
-			<img class="header-img" src="/assets/product/images/asim.svg" alt="ASIM" title="ASIM">
-		</HeaderLink>	
-	</div>
+		<HeaderLink href="/" class="header-logo-link"></HeaderLink>
+	</div>	
 
 	<div class="navigation__color-scheme">
 		<label><input name="color-scheme" type="radio" value="light"/><i class="fa-solid fa-sun-cloud"></i></label>

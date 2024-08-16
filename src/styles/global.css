@@ -46,8 +46,12 @@
 	}
 } */
 
-a:link, a:visited {
+a, a:link, a:visited {
   --link-style-color: var(--set-color-cyan);
+  -webkit-transform: translate3d(0, 0, 0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-decoration-skip-ink: auto;
 }
 
 p {
@@ -99,12 +103,6 @@ pre > code {
   position: relative;
   overflow: hidden;
   container: app / inline-size;
-    
-  /* background: mistyrose; */
-}
-
-.Masthead {
-  /* color: white; */
 }
 
 .Article {
@@ -118,17 +116,14 @@ pre > code {
 .Aside {
   width: 100%;
   container: aside/inline-size;
-  
-  /* background: LightSalmon; */
 }
 
 .Main {
   inline-size: 100%;
   margin: 0 auto 2.25rem;
   container: main/inline-size;
-      
-  /* background: salmon; */
-  
+  margin-bottom: 2em;
+
   &:last-child{
     margin-block-end:0
   }
@@ -172,6 +167,6 @@ pre > code {
 
 @container app (inline-size>=1240rem){
     .Layout{
-        grid-template-columns:auto var(--page-margin)calc(50% - var(--page-margin))
+        grid-template-columns:auto var(--page-margin)calc(40% - var(--page-margin))
     }
 }

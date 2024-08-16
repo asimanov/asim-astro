@@ -1,10 +1,10 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Nav from '../components/Nav.astro';
-import Header from '../components/Header.astro';
-import Aside from '../components/Aside.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Nav from '../../components/Nav.astro';
+import Header from '../../components/Header.astro';
+import Aside from '../../components/Aside.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 const { title, description, background, pubDate, updatedDate, heroImage } = Astro.props;
 ---
@@ -28,6 +28,16 @@ const { title, description, background, pubDate, updatedDate, heroImage } = Astr
 			}
 		}
 	}
+
+	.workdocs-annual-nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			display: inline-block;
+		}
+	}
 </style>
 
 <!DOCTYPE html>
@@ -47,35 +57,19 @@ const { title, description, background, pubDate, updatedDate, heroImage } = Astr
 				<main class="Main">
 					<Nav />
 
-					<img src="/assets/product/images/work-bw-2.jpg" style="height: auto; width: 100%; border-radius: 6rem;" class="m-b-2" alt="abduction"> 
+					<img src="/assets/product/images/work-bw-3.jpg" style="height: auto; width: 100%; border-radius: 6rem;" class="m-b-2" alt="work"> 
 
 					<div class="work-main">
 					
 						<h3 id="navDesignSystems">Annual Tasks & Projects</h3>
 
-						<ul>
-							<li><a href="https://antonsimanov.com/work/2024/" title="2024">2024</a></li>
+						<ul class="workdocs-annual-nav">
+							<li><a href="/work/2024/" title="2024" class="bsln-button">2024</a></li>
+							<li><a href="/work/2023/" title="2023" class="bsln-button">2023</a></li>
+							<li><a href="/work/2022/" title="2022" class="bsln-button">2022</a></li>
 						</ul>
 						
 						<h3 id="navDesignSystems" class="m-t-2">Design Systems</h3>
-
-						<div class="bsln-card bsln-card--hr m-b-2">
-							<div class="bsln-card__img-title" style="background-image:url(/assets/product/images/work/cards/variable-design-system.jpg); min-width: 40%;">
-
-								<div class="p-y-1 p-x-1">
-										<h5 class="m-0">Baseline</h5>
-								</div>
-							</div>
-				
-							<div class="bsln-card__body">
-								<p class="m-0 font-size--sm">A lightweight design system composed with CSS custom props, built with sass modules, & configurable with JS.</p>
-
-								<div class="p-t-1">
-									<a href="https://simanov.dev/vds" target="_blank" class="bsln-button bsln-button--outlined bsln-button--sm m-0" rel="noopener noreferrer" title="variable design system docs and demo"><i class="fas fa-eye"></i> view</a>
-									<a href="https://github.com/asimanov/variable-design-system" target="_blank" class="bsln-button bsln-button--outlined bsln-button--sm m-0" rel="noopener noreferrer" title="variable design system git repo"><i class="fab fa-github"></i> repo</a>
-								</div>
-							</div>
-						</div>
 						
 						<div class="bsln-card bsln-card--hr m-b-2">
 							<div class="bsln-card__img-title" style="background-image:url(/assets/product/images/work/cards/variable-design-system.jpg); min-width: 40%;">
