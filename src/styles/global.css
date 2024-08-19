@@ -54,6 +54,14 @@ a, a:link, a:visited {
   text-decoration-skip-ink: auto;
 }
 
+ul {
+  li {
+    a {
+      display: inline !important;
+    }
+  }
+}
+
 p {
   text-wrap: balance;
 }

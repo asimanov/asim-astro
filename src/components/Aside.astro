@@ -2,6 +2,22 @@
 // import HeaderLink from './HeaderLink.astro';
 ---
 
+<style>
+	.aside-out-link {
+        &:after {
+            display: none;
+        }
+    }
+
+    a {
+        display: inline;
+    }
+
+    p {
+        font-size: var(--set-font-size-sm);
+    }
+</style>
+
 <aside>
     <div class="container">
 
@@ -12,7 +28,7 @@
                 <h6 class="bsln-text--red">From the Blog</h6>
                 <p class="m-b-1">Take a look at some of the things that keep me busy, be it work related, personal projects, or just life in general.</p>
 
-                <p class="m-0"><a href="/blog/" title="blog">Read all blog posts ⟶</a>
+                <p class="m-0"><a href="/blog" title="blog">Read all blog posts ⟶</a>
                 </p>
             </div>
 
@@ -63,7 +79,7 @@
                 <h6 class="bsln-text--green">Resources</h6>
                 <p class="m-b-1">A collection of saved links, blogs, &amp; various resources on all kinds of subjects.</p>
 
-                <p class="m-0"><a href="/links/" title="blog">Check them out ⟶</a>
+                <p class="m-0"><a href="/links" title="blog">Check them out ⟶</a>
                 </p>
             </div>
 
@@ -75,15 +91,3 @@
 
     </div>
 </aside>
-
-<style>
-	.aside-out-link {
-        &:after {
-            display: none;
-        }
-    }
-
-    a {
-        display: inline;
-    }
-</style>
