@@ -12,6 +12,8 @@ background: /Media/blog/timebox-post.jpg
 
 *It is important to note that the the content within this post is a brief overview of some of my favorite aspects of what I learned in both classes and not a detailed exploration on all attributes of Scrum. Over time and with more experience I certainly intend to delve deeper into the individual elements of this framework.*
 
+**Take a look at the full ["Timeboxed" illustration an Abducted by AI](https://abductedbyai.com/blog/timeboxed-illustration/ "Timeboxed Illustration")**
+
 <br>
 
 ## Key Takeaways
