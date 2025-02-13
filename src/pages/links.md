@@ -6,6 +6,24 @@ updatedDate: '08/16/2024'
 background: '/assets/product/images/work-bw-2.jpg'
 ---
 
+#### Resources
+
+- [Who can use this color combination?](https://www.whocanuse.com/ "Who can use this color combination?")
+- [Dark Patterns Hall of Shame](https://hallofshame.design/ "Dark Patterns Hall of Shame")
+- [Cryptomator - secure your cloud](https://cryptomator.org/ "Cryptomator")
+- [IVPN](https://www.ivpn.net/en/pricing/ "IVPN")
+- https://creativemarket.com/Aspect_Studio/6958020-Clean-Resume-CV
+- https://creativemarket.com/theresumepark/7481582-Clean-ResumeCV-Template
+
+#### Inspiration 
+
+- [Art Directors Club](https://mullenlowedesign.co/ "Art Directors Club")
+
+#### Design 
+
+- [Visual design rules you can safely follow every time](https://anthonyhobday.com/sideprojects/saferules/ "Visual design rules you can safely follow every time")
+- [How a Web Design Goes Straight to Hell](https://theoatmeal.com/comics/design_hell "How a Web Design Goes Straight to Hell")
+
 #### Dev
 
 - [Styling Tables the Modern CSS Way
@@ -16,11 +34,6 @@ background: '/assets/product/images/work-bw-2.jpg'
 ](https://piccalil.li/blog/how-were-approaching-theming-with-modern-css/ "How we’re approaching theming with modern CSS
 ")
 - [Fine, I’ll Use a Super Basic CSS Processing Setup.](https://frontendmasters.com/blog/fine-ill-use-a-super-basic-css-processing-setup/ "Fine, I’ll Use a Super Basic CSS Processing Setup.")
-
-#### Design 
-
-- [Visual design rules you can safely follow every time](https://anthonyhobday.com/sideprojects/saferules/ "Visual design rules you can safely follow every time")
-- [How a Web Design Goes Straight to Hell](https://theoatmeal.com/comics/design_hell "How a Web Design Goes Straight to Hell")
 
 #### Video
 
@@ -37,10 +50,3 @@ background: '/assets/product/images/work-bw-2.jpg'
 - https://64.media.tumblr.com/b306fa46659f973df17d687285860576/9fab8461dc1a86cb-65/s500x750/d2b6ed2b2b7d8862408f7f85b86ba14b73efec61.gif
 - https://i.imgur.com/BZDAXRo.gif
 - https://media.tenor.com/KcqtH2ff4kIAAAAC/weather-rain.gif
-
-#### Resources
-
-- [Dark Patterns Hall of Shame](https://hallofshame.design/ "Dark Patterns Hall of Shame")
-- [IVPN](https://www.ivpn.net/en/pricing/ "IVPN")
-- https://creativemarket.com/Aspect_Studio/6958020-Clean-Resume-CV
-- https://creativemarket.com/theresumepark/7481582-Clean-ResumeCV-Template
