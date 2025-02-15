@@ -42,4 +42,19 @@ const workdocs = defineCollection({
 	}),
 });
 
-export const collections = { blog, workdocs };
+const percept = defineCollection({
+	type: 'content',
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		// Transform string to Date object
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		author: z.string().optional(),
+		tags: z.string().optional(),
+		background: z.string().optional(),
+	}),
+});
+
+export const collections = { blog, workdocs, percept };
