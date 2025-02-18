@@ -27,6 +27,11 @@ const { title, description, pubDate, updatedDate, author, tags, background } = A
 		background-size: cover;
 	}
 
+	.meta-dates {
+      font-family: var(--set-font-mono);
+      font-size: var(--set-font-size-sm);
+    }
+
 	.post__content {
 		p {
 			margin-bottom: 1em;
@@ -48,7 +53,23 @@ const { title, description, pubDate, updatedDate, author, tags, background } = A
 				bottom: -10rem;
 			}
 		}
-	}
+
+		h4, h6 {
+			--heading-underline-color: var(--set-color-base-inverse);
+			position: relative;
+			margin-bottom: 26rem;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 60rem;
+				height: 6rem;
+				background: var(--heading-underline-color);
+				position: absolute;
+				left: 0;
+				bottom: -10rem;
+			}
+		}
 
 	.post__meta {
 		font-family: var(--set-font-mono);
@@ -89,28 +110,31 @@ const { title, description, pubDate, updatedDate, author, tags, background } = A
 						<Nav />
 						
 						<header class="entry-header">
-							<div class="entry-header__hero" style={background && `background-image:url(${background})`}>
-								
+
+							<img src={background} style="height: auto; width: 100%; border-radius: 6rem;" alt={title}> 
+
+							<div class="meta-dates p-b-1">
+								<span><strong>Published:</strong> {new Date(pubDate).toLocaleDateString('en-us', {
+									year: 'numeric',
+									month: 'numeric',
+									day: 'numeric',
+								})}</span> |
+								{updatedDate && (
+									<span>
+									  <strong>Updated:</strong>
+									  {new Date(updatedDate).toLocaleDateString('en-us', {
+										year: 'numeric',
+										month: 'numeric',
+										day: 'numeric',
+									  })}
+									</span>
+								)}
 							</div>
-						
-							<h1>{title}</h2>
+
 						</header>
 			
 						<div class="post">
 							<section class="section">
-
-								<div class="post__meta">
-									<span class="post__meta-author">{author}</span> 
-									<span class="post__meta-date">  
-										<time>
-											{new Date(pubDate).toLocaleDateString('en-us', {
-												year: 'numeric',
-												month: 'numeric',
-												day: 'numeric',
-											})}
-										</time>	
-									</span>
-								</div>
 
 								<div class="post__content">
 									<slot />

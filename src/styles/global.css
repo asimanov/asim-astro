@@ -47,7 +47,7 @@
 } */
 
 a, a:link, a:visited {
-  --link-style-color: var(--set-color-cyan);
+  --link-style-color: var(--set-color-purple);
   -webkit-transform: translate3d(0, 0, 0);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
