@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 900">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 900">
   <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
   <defs>
     <style>
@@ -47,19 +47,18 @@
   </g>
   <g id="Layer_2">
     <polygon class="st4" points="40.5 359.5 133.8 435.7 747.1 435.7 653.9 359.5 40.5 359.5"/>
-    <path class="st5" d="M443.6,125.8v619.7h-200.8v-200.8h111l-3.4-109h-216.6v418.8h418.8v-309.8h309.8V125.8h-418.8ZM753.5,435.7h-200.8v-200.8h200.8v200.8Z"/>
+    <path class="st5" d="M443.6,125.8v619.7h-200.8v-200.8h111l-3.4-109h-216.6v418.8h418.8v-309.8h309.8V125.8h-418.8,0ZM753.5,435.7h-200.8v-200.8h200.8v200.8Z"/>
     <g>
-      <rect class="st6" x="361.2" y="749.6" width="22.5" height="101.7"/>
-      <rect class="st6" x="329.2" y="745.6" width="20.3" height="101.7"/>
-      <rect class="st6" x="300.2" y="745.6" width="12.2" height="101.7"/>
-      <rect class="st6" x="276.1" y="745.6" width="6.1" height="101.7"/>
+      <rect class="st6" x="489.7" y="629.7" width="22.5" height="101.7" transform="translate(-179.6 1181.5) rotate(-90)"/>
+      <rect class="st6" x="486.8" y="662.8" width="20.3" height="101.7" transform="translate(-216.7 1210.6) rotate(-90)"/>
+      <rect class="st6" x="490.9" y="695.8" width="12.2" height="101.7" transform="translate(-249.7 1243.6) rotate(-90)"/>
     </g>
-    <path class="st6" d="M390.4,852.6l162.2,1.9v-309.8h309.8V125.8h-416.7l-1,618.6-54.3,2.8v105.4ZM753.5,435.7h-200.8v-200.8h200.8v200.8Z"/>
+    <path class="st6" d="M552.6,662v-117.3h309.8V125.8h-416.7l-1,536.2h107.9ZM753.5,435.7h-200.8v-200.8h200.8v200.8Z"/>
     <g>
-      <rect class="st5" x="559.2" y="429.8" width="24.3" height="110" transform="translate(1142.8 969.6) rotate(-180)"/>
-      <rect class="st5" x="596.2" y="434.1" width="21.9" height="110" transform="translate(1214.4 978.1) rotate(-180)"/>
-      <rect class="st5" x="636.4" y="434.1" width="13.2" height="110" transform="translate(1285.9 978.1) rotate(-180)"/>
-      <rect class="st5" x="669" y="434.1" width="6.6" height="110" transform="translate(1344.6 978.1) rotate(-180)"/>
+      <rect class="st5" x="559.3" y="429.8" width="24.3" height="110"/>
+      <rect class="st5" x="596.3" y="434" width="21.9" height="110"/>
+      <rect class="st5" x="636.3" y="434" width="13.2" height="110"/>
+      <rect class="st5" x="669" y="434" width="6.6" height="110"/>
     </g>
     <polygon class="st4" points="862.5 125.8 769.2 49.6 350.4 49.6 443.6 125.8 862.5 125.8"/>
     <polygon class="st3" points="350.4 49.6 350.4 669.3 443.6 745.5 443.6 125.8 350.4 49.6"/>

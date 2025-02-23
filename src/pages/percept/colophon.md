@@ -3,7 +3,7 @@ layout: '../../layouts/Page.astro'
 title: 'Percept: Colophon'
 pubDate: '02/14/2024'
 updatedDate: '02/14/2024'
-background: '/assets/product/images/blog-bw-2.jpg'
+background: '/assets/product/images/percept/p-bg-01.jpg'
 ---
 
 # Percept
