@@ -6,5 +6,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://antonsimanov.com',
 	integrations: [mdx(), sitemap()],
-	trailingSlash: 'never', // Options: 'always', 'never', or 'ignore'
+	trailingSlash: 'ignore', // Options: 'always', 'never', or 'ignore'
 });
