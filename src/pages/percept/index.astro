@@ -6,6 +6,7 @@ import Aside from '../../components/Aside.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
+import Gallery from '../../components/Gallery.astro';
 
 const posts = (await getCollection('percept')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -14,17 +15,58 @@ const posts = (await getCollection('percept')).sort(
 ---
 
 <style>
+.percept-container {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.percept-rc {
+	width: 20%;
+
+	h6 {
+		/* font-size: calc(6rem + 0.5vw); */
+		word-break: break-all;
+
+		span {
+			display: inline-block;
+		}
+	}
+}
+
+.percept-rc__entry-container {
+	a {
+		border: none;
+	}
+
+	.gallery {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+}
+
+.percept-rc__entry {
+	width: 100%;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.percept-journal {
+	width: 80%;
+}
+
 .entry-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  margin: 0 -10rem;
 }
 
 .entry {
   --card-box-shadow: none;
-	
-  padding: 8rem 10rem;
   border-radius: 6px;
   box-sizing: border-box;
   border-bottom: none;
@@ -50,7 +92,7 @@ time {
 .excerpt {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: balance;
@@ -79,9 +121,37 @@ h5 {
 }
 
 @media (max-width: 600px) {
+	.percept-rc__entry-container {
+		.gallery {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
   .entry-container {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .percept-rc {
+	width: 100%;
+
+	h6 {
+		font-size: var(--set-font-size-h6);
+	}
+  }
+
+  .percept-journal {
+	width: 100%;
+  }
+
+  .percept-container {
+	flex-direction: column;
+	gap: 10px;
+  }
+
+  .percept-rc__entry {
+	max-width: 180px;
   }
 
   .entry:first-child {
@@ -150,35 +220,71 @@ h5 {
 						</div>
 					</div>
 
-					<h4 class="m-t-2">Percept Entries</h4>
+					<div class="percept-container">
 
-					<div class="entry-container">
-		
-						{
-							posts.map((post) => (
+						<div class="percept-rc">
+							<h6 class="m-t-2">Reverie <span>Compendium</span></h6>
+
+							<div class="percept-rc__entry-container">
+
+<Gallery>
+	<a class="percept-rc__entry" href="/Media/percept/rc/prc-20250426.jpg"
+	   data-post-url="/percept/20250429"
+	>
+		<img
+			src="/Media/percept/rc/thumb-prc-20250426.jpg"
+			alt="Percept Reverie Compendium 20250426"
+		/>
+	</a>
+
+	<a class="percept-rc__entry" href="/Media/percept/rc/prc-20240504.jpg"
+	>
+		<img
+			src="/Media/percept/rc/thumb-prc-20240504.jpg"
+			alt="Percept Reverie Compendium 20240504"
+		/>
+	</a>
+</Gallery>
+
+							</div>
+
+						</div>
+
+						<div class="percept-journal">
+							
+							<h6 class="m-t-2">Journal Entries</h6>
+
+							<div class="entry-container">
+				
+								{
+									posts.map((post) => (
+										
+										<a href={`/percept/${post.slug}`} class="entry bsln-card">
+
+											<div>	
+											<p>
+												<time class="font-size--xs">
+													{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+														year: 'numeric',
+														month: 'numeric',
+														day: 'numeric',
+													})}
+												</time>	
+											</p>
+
+											<h5>{post.data.title}</h5>
+											</div>
+
+											<div><p class="excerpt">{post.data.description}</p></div>
+											
+										</a>
+									))
+								}
 								
-								<a href={`/percept/${post.slug}`} class="entry bsln-card">
+							</div>
 
-									<div>	
-									<p>
-										<time class="font-size--xs">
-											{new Date(post.data.pubDate).toLocaleDateString('en-us', {
-												year: 'numeric',
-												month: 'numeric',
-												day: 'numeric',
-											})}
-										</time>	
-									</p>
+						</div>
 
-									<h5>{post.data.title}</h5>
-									</div>
-
-									<div><p class="excerpt">{post.data.description}</p></div>
-									
-								</a>
-							))
-						}
-						
 					</div>
 
 				</main>
